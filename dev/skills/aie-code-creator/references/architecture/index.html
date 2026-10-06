@@ -1836,6 +1836,8 @@
       
         
       
+        
+      
     
     
     
@@ -1974,6 +1976,34 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../programming_guide/section-4/section-4d/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4d: Kernel Optimization
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -2046,6 +2076,10 @@
   
     
     
+      
+        
+      
+        
       
         
       
@@ -2289,6 +2323,62 @@
     
   
     Kernel Library
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://xilinx.github.io/mlir-aie/kernel-checks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Nightly Kernel Checks
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://xilinx.github.io/mlir-aie/kernel-checks/#view=components" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Nightly Component Checks
   
 
     
@@ -3680,7 +3770,7 @@ SPDX-License-Identifier: Apache-2.0 WITH LLVM-exception
 <tr>
 <td><code>bfloat16</code></td>
 <td>16</td>
-<td>32</td>
+<td>32 (a multiply is 16 on AIE2: <code>AIE_BF16_LANES</code>)</td>
 <td><code>accfloat</code> (or <code>accauto</code> in MMUL)</td>
 </tr>
 <tr>
@@ -3795,7 +3885,7 @@ belongs in a design. (<code>kernels.cascade_mm</code> is a scalar kernel on both
 <tr>
 <td>Clock</td>
 <td>~1.0–1.3 GHz</td>
-<td>~1.5 GHz</td>
+<td>~1.5 GHz nominal; 1.76 GHz measured on Strix</td>
 </tr>
 </tbody>
 </table>
@@ -3837,7 +3927,7 @@ belongs in a design. (<code>kernels.cascade_mm</code> is a scalar kernel on both
 </tbody>
 </table>
 <p>This drives real design decisions: a reshape needing 4 <code>(size, stride)</code> dimensions <strong>must</strong>
-  land on a mem-tile DMA. If a compute tile's <code>dims_to_stream</code> or a shim's tap already needs
+  land on a mem-tile DMA. If a compute tile's <code>to_stream</code> or a shim's tap already needs
   3 dimensions, you have no fourth to spend — route L3→L2→L1 and put the reshape on the
   mem-tile <code>split()</code>/<code>join()</code>/<code>forward()</code> instead. For access patterns beyond the limit, chain
   multiple BDs or use runtime repeat counts.</p>

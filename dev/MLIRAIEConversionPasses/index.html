@@ -1836,6 +1836,8 @@
       
         
       
+        
+      
     
     
     
@@ -1974,6 +1976,34 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../programming_guide/section-4/section-4d/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4d: Kernel Optimization
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -2046,6 +2076,10 @@
   
     
     
+      
+        
+      
+        
       
         
       
@@ -2289,6 +2323,62 @@
     
   
     Kernel Library
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://xilinx.github.io/mlir-aie/kernel-checks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Nightly Kernel Checks
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://xilinx.github.io/mlir-aie/kernel-checks/#view=components" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Nightly Component Checks
   
 
     
@@ -3521,6 +3611,23 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="-convert-aiex-to-emitc">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#options_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Options
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -3596,6 +3703,10 @@ binary emitter (<code>AIETargetNPU.cpp</code>) produces, but from a C++ function
 runtime-valued operands can flow through to a single compiled xclbin.</p>
 <p>Control flow (<code>scf.for</code>/<code>scf.if</code>) inside a runtime sequence is rejected with
 a diagnostic; it is handled by later passes in the dynamic-sequences work.</p>
+<h4 id="options_3">Options<a class="headerlink" href="#options_3" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>-fold-ddr-addr-offset : Fold the AIE DDR-aperture offset into the arg_plus of DDR address patches for host arguments beyond the firmware-translated set (mirrors -aie-npu-fold-ddr-addr-offset on the static aie-npu-to-binary path). Required for the xclbin + instruction-buffer runtime; must be false for the full-ELF (xrt.ext.kernel) runtime and for HRX, which translate every host buffer address themselves.
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>-emit-dispatch-shim   : Also emit the extern &quot;C&quot; dispatch_abi() / dispatch_generate() entry points the JIT dispatch bridge loads via ctypes. Requires exactly one aie.runtime_sequence. Off by default: these are definitions, so a header including them twice would not link.
+</code></pre></div>
 
 
 
