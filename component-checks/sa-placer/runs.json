@@ -1,0 +1,41 @@
+{
+ "schema": 1,
+ "target": "sa-placer",
+ "metrics": [
+  "cpu_ms_max",
+  "cpu_ms_mean",
+  "failed_seeds",
+  "final_cost_max",
+  "final_cost_mean",
+  "peak_rss_mb_max"
+ ],
+ "runs": [
+  {
+   "schema": 1,
+   "target": "sa-placer",
+   "id": "37584124094",
+   "url": "https://github.com/MicroPerceptron/amd-npu-compiler/actions/runs/37584124094",
+   "date": "2026-10-07T06:54:24+00:00",
+   "commit": {
+    "id": "a75319190bdb1ca83703433b2aa8f8f52bc80565",
+    "url": "https://github.com/Xilinx/mlir-aie/commit/a75319190bdb1ca83703433b2aa8f8f52bc80565",
+    "message": "aie_kernels: an argmax kernel, and a stale accumulator in vector_reduce_max [MED] (#3602)",
+    "timestamp": "2026-10-06T17:23:19Z"
+   },
+   "event": "schedule",
+   "pmode": null,
+   "device": null,
+   "device_raw": null,
+   "provenance": {
+    "commit": "a75319190b",
+    "fixtures": "3aa7139253a0"
+   },
+   "sane": true,
+   "published": true,
+   "n_rows": 12,
+   "exitstatus": 0,
+   "failed": [],
+   "truncated": []
+  }
+ ]
+}
