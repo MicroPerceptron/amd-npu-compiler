@@ -1,9 +1,9 @@
 {
  "schema": 1,
  "target": "sa-placer",
- "id": "38695019789",
- "url": "https://github.com/MicroPerceptron/amd-npu-compiler/actions/runs/38695019789",
- "date": "2026-10-15T06:52:02+00:00",
+ "id": "38863628893",
+ "url": "https://github.com/MicroPerceptron/amd-npu-compiler/actions/runs/38863628893",
+ "date": "2026-10-16T06:51:49+00:00",
  "commit": {
   "id": "a75319190bdb1ca83703433b2aa8f8f52bc80565",
   "url": "https://github.com/Xilinx/mlir-aie/commit/a75319190bdb1ca83703433b2aa8f8f52bc80565",
@@ -31,15 +31,15 @@
     "unit": "seeds"
    },
    "cpu_ms_mean": {
-    "value": 847.6,
+    "value": 1319.9,
     "unit": "ms"
    },
    "cpu_ms_max": {
-    "value": 1035.7,
+    "value": 1638.0,
     "unit": "ms"
    },
    "peak_rss_mb_max": {
-    "value": 59.8,
+    "value": 60.2,
     "unit": "MB"
    },
    "final_cost_mean": {
@@ -57,15 +57,15 @@
     "unit": "seeds"
    },
    "cpu_ms_mean": {
-    "value": 27304.2,
+    "value": 46158.1,
     "unit": "ms"
    },
    "cpu_ms_max": {
-    "value": 29476.7,
+    "value": 51811.4,
     "unit": "ms"
    },
    "peak_rss_mb_max": {
-    "value": 64.1,
+    "value": 64.3,
     "unit": "MB"
    },
    "final_cost_mean": {
@@ -84,23 +84,23 @@
    "seed": 1,
    "passed": true,
    "final_cost": 12,
-   "cpu_ms": 962.0,
-   "peak_rss_mb": 58.8
+   "cpu_ms": 1638.0,
+   "peak_rss_mb": 59.1
   },
   {
    "fixture": "test_sa_effort",
    "seed": 2,
    "passed": true,
    "final_cost": 12,
-   "cpu_ms": 846.9,
-   "peak_rss_mb": 58.8
+   "cpu_ms": 1324.4,
+   "peak_rss_mb": 59.6
   },
   {
    "fixture": "test_sa_effort",
    "seed": 3,
    "passed": true,
    "final_cost": 12,
-   "cpu_ms": 839.9,
+   "cpu_ms": 1298.9,
    "peak_rss_mb": 58.7
   },
   {
@@ -108,71 +108,71 @@
    "seed": 4,
    "passed": true,
    "final_cost": 12,
-   "cpu_ms": 814.3,
-   "peak_rss_mb": 58.8
+   "cpu_ms": 1325.8,
+   "peak_rss_mb": 58.6
   },
   {
    "fixture": "test_sa_effort",
    "seed": 5,
    "passed": true,
    "final_cost": 12,
-   "cpu_ms": 695.1,
-   "peak_rss_mb": 58.8
+   "cpu_ms": 1102.0,
+   "peak_rss_mb": 58.7
   },
   {
    "fixture": "test_sa_effort",
    "seed": 6,
    "passed": true,
    "final_cost": 12,
-   "cpu_ms": 987.9,
-   "peak_rss_mb": 59.3
+   "cpu_ms": 1482.2,
+   "peak_rss_mb": 59.8
   },
   {
    "fixture": "test_sa_effort",
    "seed": 7,
    "passed": true,
    "final_cost": 12,
-   "cpu_ms": 826.6,
-   "peak_rss_mb": 58.7
+   "cpu_ms": 1257.1,
+   "peak_rss_mb": 58.6
   },
   {
    "fixture": "test_sa_effort",
    "seed": 8,
    "passed": true,
    "final_cost": 12,
-   "cpu_ms": 800.7,
-   "peak_rss_mb": 59.2
+   "cpu_ms": 1297.5,
+   "peak_rss_mb": 60.2
   },
   {
    "fixture": "test_sa_effort",
    "seed": 9,
    "passed": true,
    "final_cost": 12,
-   "cpu_ms": 771.4,
-   "peak_rss_mb": 58.7
+   "cpu_ms": 1239.9,
+   "peak_rss_mb": 59.6
   },
   {
    "fixture": "test_sa_effort",
    "seed": 10,
    "passed": true,
    "final_cost": 12,
-   "cpu_ms": 977.0,
-   "peak_rss_mb": 58.8
+   "cpu_ms": 1535.7,
+   "peak_rss_mb": 59.3
   },
   {
    "fixture": "test_sa_effort",
    "seed": 11,
    "passed": true,
    "final_cost": 12,
-   "cpu_ms": 753.2,
-   "peak_rss_mb": 59.4
+   "cpu_ms": 1224.2,
+   "peak_rss_mb": 58.7
   },
   {
    "fixture": "test_sa_effort",
    "seed": 12,
    "passed": true,
    "final_cost": 12,
-   "cpu_ms": 943.0,
+   "cpu_ms": 1370.7,
    "peak_rss_mb": 59.8
   },
   {
@@ -180,47 +180,47 @@
    "seed": 13,
    "passed": true,
    "final_cost": 12,
-   "cpu_ms": 964.6,
-   "peak_rss_mb": 59.3
+   "cpu_ms": 1518.3,
+   "peak_rss_mb": 58.6
   },
   {
    "fixture": "test_sa_effort",
    "seed": 14,
    "passed": true,
    "final_cost": 12,
-   "cpu_ms": 706.9,
-   "peak_rss_mb": 59.6
+   "cpu_ms": 1011.9,
+   "peak_rss_mb": 58.7
   },
   {
    "fixture": "test_sa_effort",
    "seed": 15,
    "passed": true,
    "final_cost": 12,
-   "cpu_ms": 756.0,
-   "peak_rss_mb": 59.0
+   "cpu_ms": 1174.8,
+   "peak_rss_mb": 59.3
   },
   {
    "fixture": "test_sa_effort",
    "seed": 16,
    "passed": true,
    "final_cost": 12,
-   "cpu_ms": 1035.7,
-   "peak_rss_mb": 59.3
+   "cpu_ms": 1509.0,
+   "peak_rss_mb": 59.8
   },
   {
    "fixture": "test_sa_effort",
    "seed": 17,
    "passed": true,
    "final_cost": 12,
-   "cpu_ms": 896.4,
-   "peak_rss_mb": 59.8
+   "cpu_ms": 1403.0,
+   "peak_rss_mb": 58.7
   },
   {
    "fixture": "test_sa_effort",
    "seed": 18,
    "passed": true,
    "final_cost": 12,
-   "cpu_ms": 763.9,
+   "cpu_ms": 1205.3,
    "peak_rss_mb": 58.8
   },
   {
@@ -228,176 +228,176 @@
    "seed": 19,
    "passed": true,
    "final_cost": 12,
-   "cpu_ms": 837.1,
-   "peak_rss_mb": 59.7
+   "cpu_ms": 1281.5,
+   "peak_rss_mb": 59.5
   },
   {
    "fixture": "test_sa_effort",
    "seed": 20,
    "passed": true,
    "final_cost": 12,
-   "cpu_ms": 773.3,
-   "peak_rss_mb": 59.8
+   "cpu_ms": 1197.1,
+   "peak_rss_mb": 59.7
   },
   {
    "fixture": "mobilenet",
    "seed": 1,
    "passed": true,
    "final_cost": 300,
-   "cpu_ms": 26672.5,
-   "peak_rss_mb": 62.8
+   "cpu_ms": 44732.0,
+   "peak_rss_mb": 63.5
   },
   {
    "fixture": "mobilenet",
    "seed": 2,
    "passed": true,
    "final_cost": 285,
-   "cpu_ms": 27612.7,
-   "peak_rss_mb": 63.5
+   "cpu_ms": 43673.7,
+   "peak_rss_mb": 63.6
   },
   {
    "fixture": "mobilenet",
    "seed": 3,
    "passed": true,
    "final_cost": 304,
-   "cpu_ms": 27756.7,
-   "peak_rss_mb": 63.0
+   "cpu_ms": 46423.0,
+   "peak_rss_mb": 62.7
   },
   {
    "fixture": "mobilenet",
    "seed": 4,
    "passed": true,
    "final_cost": 294,
-   "cpu_ms": 28728.8,
-   "peak_rss_mb": 63.6
+   "cpu_ms": 47601.2,
+   "peak_rss_mb": 62.9
   },
   {
    "fixture": "mobilenet",
    "seed": 5,
    "passed": true,
    "final_cost": 304,
-   "cpu_ms": 28329.3,
-   "peak_rss_mb": 63.5
+   "cpu_ms": 49631.3,
+   "peak_rss_mb": 62.8
   },
   {
    "fixture": "mobilenet",
    "seed": 6,
    "passed": true,
    "final_cost": 291,
-   "cpu_ms": 28012.2,
-   "peak_rss_mb": 64.1
+   "cpu_ms": 51811.4,
+   "peak_rss_mb": 63.6
   },
   {
    "fixture": "mobilenet",
    "seed": 7,
    "passed": true,
    "final_cost": 311,
-   "cpu_ms": 29476.7,
-   "peak_rss_mb": 63.9
+   "cpu_ms": 47884.1,
+   "peak_rss_mb": 62.7
   },
   {
    "fixture": "mobilenet",
    "seed": 8,
    "passed": true,
    "final_cost": 301,
-   "cpu_ms": 27656.4,
-   "peak_rss_mb": 62.8
+   "cpu_ms": 49223.2,
+   "peak_rss_mb": 64.3
   },
   {
    "fixture": "mobilenet",
    "seed": 9,
    "passed": true,
    "final_cost": 294,
-   "cpu_ms": 27490.6,
-   "peak_rss_mb": 63.6
+   "cpu_ms": 42096.1,
+   "peak_rss_mb": 63.8
   },
   {
    "fixture": "mobilenet",
    "seed": 10,
    "passed": true,
    "final_cost": 293,
-   "cpu_ms": 28246.5,
-   "peak_rss_mb": 63.6
+   "cpu_ms": 46159.1,
+   "peak_rss_mb": 62.9
   },
   {
    "fixture": "mobilenet",
    "seed": 11,
    "passed": true,
    "final_cost": 304,
-   "cpu_ms": 26173.3,
-   "peak_rss_mb": 63.0
+   "cpu_ms": 46726.4,
+   "peak_rss_mb": 63.1
   },
   {
    "fixture": "mobilenet",
    "seed": 12,
    "passed": true,
    "final_cost": 294,
-   "cpu_ms": 26077.5,
-   "peak_rss_mb": 63.4
+   "cpu_ms": 47278.4,
+   "peak_rss_mb": 63.5
   },
   {
    "fixture": "mobilenet",
    "seed": 13,
    "passed": true,
    "final_cost": 302,
-   "cpu_ms": 26165.5,
-   "peak_rss_mb": 63.6
+   "cpu_ms": 45966.6,
+   "peak_rss_mb": 63.2
   },
   {
    "fixture": "mobilenet",
    "seed": 14,
    "passed": true,
    "final_cost": 285,
-   "cpu_ms": 28202.3,
-   "peak_rss_mb": 62.8
+   "cpu_ms": 47074.2,
+   "peak_rss_mb": 63.4
   },
   {
    "fixture": "mobilenet",
    "seed": 15,
    "passed": true,
    "final_cost": 290,
-   "cpu_ms": 29174.7,
-   "peak_rss_mb": 62.9
+   "cpu_ms": 48076.0,
+   "peak_rss_mb": 63.2
   },
   {
    "fixture": "mobilenet",
    "seed": 16,
    "passed": true,
    "final_cost": 282,
-   "cpu_ms": 27446.7,
-   "peak_rss_mb": 64.0
+   "cpu_ms": 44281.0,
+   "peak_rss_mb": 63.5
   },
   {
    "fixture": "mobilenet",
    "seed": 17,
    "passed": true,
    "final_cost": 298,
-   "cpu_ms": 27872.1,
-   "peak_rss_mb": 63.6
+   "cpu_ms": 46455.1,
+   "peak_rss_mb": 63.3
   },
   {
    "fixture": "mobilenet",
    "seed": 18,
    "passed": true,
    "final_cost": 322,
-   "cpu_ms": 26556.9,
-   "peak_rss_mb": 63.0
+   "cpu_ms": 43499.4,
+   "peak_rss_mb": 63.3
   },
   {
    "fixture": "mobilenet",
    "seed": 19,
    "passed": true,
    "final_cost": 302,
-   "cpu_ms": 22875.7,
-   "peak_rss_mb": 62.8
+   "cpu_ms": 39678.6,
+   "peak_rss_mb": 62.5
   },
   {
    "fixture": "mobilenet",
    "seed": 20,
    "passed": true,
    "final_cost": 299,
-   "cpu_ms": 25557.6,
-   "peak_rss_mb": 63.8
+   "cpu_ms": 44891.6,
+   "peak_rss_mb": 63.3
   }
  ]
 }
