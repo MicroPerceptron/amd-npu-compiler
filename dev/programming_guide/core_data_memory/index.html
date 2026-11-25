@@ -18,14 +18,14 @@
         <link rel="prev" href="../iron_configuration/">
       
       
-        <link rel="next" href="../hrx_runtime/">
+        <link rel="next" href="../routing/">
       
       
         
       
       
       <link rel="icon" href="../../assets/images/favicon.svg">
-      <meta name="generator" content="mkdocs-ProperDocs 1.6.7, mkdocs-material-9.7.7">
+      <meta name="generator" content="mkdocs-ProperDocs 1.6.7, mkdocs-material-9.8.0">
     
     
       
@@ -33,10 +33,10 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.57a0d79d.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.fb2fffe2.min.css">
       
       
 
@@ -2112,8 +2112,6 @@
       
         
       
-        
-      
     
     
     
@@ -2411,6 +2409,34 @@
   
   
     <li class="md-nav__item">
+      <a href="../routing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Routing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../hrx_runtime/" class="md-nav__link">
         
   
@@ -2544,62 +2570,6 @@
 
               
             
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="https://xilinx.github.io/mlir-aie/kernel-checks/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Nightly Kernel Checks
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="https://xilinx.github.io/mlir-aie/kernel-checks/#view=components" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Nightly Component Checks
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
           </ul>
         </nav>
       
@@ -2628,6 +2598,8 @@
       
         
           
+        
+      
         
       
         
@@ -2785,6 +2757,34 @@
   
   
     <li class="md-nav__item">
+      <a href="../../skills/aie-iron-design/SKILL/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Phase 3: IRON Design
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../skills/aie-hw-bringup/SKILL/" class="md-nav__link">
         
   
@@ -2792,7 +2792,7 @@
   <span class="md-ellipsis">
     
   
-    Phase 3: HW Bring-up
+    Phase 4: HW Bring-up
   
 
     
@@ -2820,7 +2820,7 @@
   <span class="md-ellipsis">
     
   
-    Phase 4: Kernel Optimization
+    Phase 5: Kernel Optimization
   
 
     
@@ -2848,7 +2848,7 @@
   <span class="md-ellipsis">
     
   
-    Phase 4: Dataflow Optimization
+    Phase 5: Dataflow Optimization
   
 
     
@@ -2950,6 +2950,8 @@
   
     
     
+      
+        
       
         
       
@@ -3079,6 +3081,34 @@
     
   
     Tensor Access Patterns (taplib)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../api/operators/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Operators and declarations
   
 
     
@@ -3538,6 +3568,8 @@
       
         
       
+        
+      
     
     
     
@@ -3626,6 +3658,34 @@
     
   
     Contributing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://xilinx.github.io/mlir-aie/dashboard/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Maintainer Dashboard
   
 
     
@@ -3962,7 +4022,10 @@
 
 <h1 id="core-data-memory">Core Data Memory<a class="headerlink" href="#core-data-memory" title="Permanent link">&para;</a></h1>
 <p>Every AIE compute tile has one small block of local data memory, 64 kB on npu2
-for example; IRON reads the size as <code>dev.core_memory_bytes</code>. Three things share that block:</p>
+for example; IRON reads the size as <code>dev.core_memory_bytes</code>, and the banks the
+buffer allocator places in as <code>dev.core_memory_banks</code> of
+<code>dev.core_memory_bank_bytes</code> each: four of 16 kB on AIE2 and AIE2P, each two
+hardware banks interleaved. Three things share that block:</p>
 <ul>
 <li>the <strong>stack</strong>, at offset zero by default;</li>
 <li>the <strong><code>aie.buffer</code>s</strong> that the buffer allocator places on the tile: the L1
@@ -3983,18 +4046,23 @@ core's own sections want is measured first and reserved. See
 <p>This page covers the <strong>stack</strong> and the <strong>core's own sections</strong>: sizing,
 bank placement, the attributes and flags that control them, and what to do
 when a diagnostic fires.</p>
-<p>One rule governs both checks: <em>the compiler measures and reports, you declare
-and rebuild.</em> <code>aiecc</code> never writes <code>stack_size</code> or <code>data_size</code>. A value you set
-explicitly stays as you wrote it (<code>data_size = 0</code> is legal; <code>stack_size</code> must
-be positive). When the measured requirement exceeds the declared value, the
-build reports the number to set and stops.</p>
+<p>One rule governs both: <em>declared wins, measured stands in.</em> <code>aiecc</code> never
+writes <code>stack_size</code> or <code>data_size</code>. A value you set explicitly stays as you
+wrote it (<code>data_size = 0</code> is legal; <code>stack_size</code> must be positive), and when the
+measured requirement exceeds it, the build reports the number to set and stops.
+When the attribute is absent, <code>aiecc</code> measures the core before placement and
+reserves what it found.</p>
 <h2 id="the-stack-stack_size">The stack: <code>stack_size</code><a class="headerlink" href="#the-stack-stack_size" title="Permanent link">&para;</a></h2>
-<p><code>stack_size</code> is a per-core attribute on <code>aie.core</code>. A core that leaves it
-absent uses the target default from
-<code>AIETargetModel::getDefaultCoreStackSize()</code>, currently 1024 bytes, which IRON
-reads as <code>dev.default_core_stack_bytes</code>. IRON spells it on the <code>Worker</code>:</p>
+<p><code>stack_size</code> is a per-core attribute on <code>aie.core</code>. Most cores leave it absent,
+and <code>aiecc</code> then reserves the core's measured stack requirement, never less
+than the target default from <code>AIETargetModel::getDefaultCoreStackSize()</code>
+(currently 1024 bytes, which IRON reads as <code>dev.default_core_stack_bytes</code>). A
+core that fits the default keeps the layout it would have had anyway. To fix
+the size yourself, IRON spells it on the <code>Worker</code>:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">Worker</span><span class="p">(</span><span class="n">core_fn</span><span class="p">,</span> <span class="p">[</span><span class="n">args</span><span class="p">],</span> <span class="n">stack_size</span><span class="o">=</span><span class="mi">4096</span><span class="p">)</span>
 </code></pre></div>
+<p>Set it where <code>aiecc</code> cannot measure the core, as in a Chess build, or to hold
+headroom above the measurement.</p>
 <p>The stack grows upward from its assigned address. A core whose frames exceed
 the reservation can overwrite buffers or static data beyond it. <code>aiecc</code>
 therefore measures each core's stack requirement and checks <code>stack_size</code>
@@ -4009,15 +4077,40 @@ differs: all of it coexists, whatever the control flow.</p>
 calls the core body, which calls its kernels. <code>_main_init</code> holds a frame that
 stays live across the whole chain, so it counts. <code>__start</code> establishes the
 stack pointer, so its own frame counts as 0.</p>
-<p>The check runs once, after each core is linked, and the Peano link keeps the
-relocations (<code>-Wl,--emit-relocs</code>) that the walk needs. <code>aiecc</code> writes the
-result to the <code>measured_stack_size</code> attribute on the <code>aie.core</code>, so you can
-inspect it:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>aie.core(%tile_0_2) { ... } {stack_size = 8192 : i32, measured_stack_size = 4128 : i32}
+<p><code>aiecc</code> walks the call graph twice. Before placement, it links each core once
+against permissive regions, the same probe link that sizes the core's static
+data (see <a href="#measured_data_size"><code>measured_data_size</code></a>). An exact result goes to
+the <code>measured_stack_size</code> attribute on the <code>aie.core</code>, and a core without
+<code>stack_size</code> reserves it, rounded up to the stack alignment. Tile placement
+runs before the probe, so <code>--placer=sa_placer</code> budgets the declared or default
+stack. When the measured stack then doesn't fit beside the tile's buffers,
+buffer placement fails and its memory map notes the measurement. The probe links
+the same objects with the same garbage collection as the final link. After the
+final link, <code>aiecc</code> walks again and checks the reservation against the result.
+Both links keep the relocations (<code>-Wl,--emit-relocs</code>) that the walk needs. You
+can inspect the result:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>aie.core(%tile_0_2) { ... } {measured_stack_size = 4128 : i32}
 </code></pre></div>
 <p>Pass <code>--get=measured_stack_sizes.mlir</code> to dump that module. A <code>stack_size</code>
-below <code>measured_stack_size</code> fails the build. <code>measured_stack_size</code> stays absent
-when <code>aiecc</code> cannot measure the core; see the stack-contribution overrides below.</p>
+below <code>measured_stack_size</code> fails the build.</p>
+<p>A core without <code>stack_size</code> keeps the target default, guarded by the post-link
+check, when there is no exact measurement before placement:</p>
+<ul>
+<li>the build uses Chess (<code>--xchesscc</code>/<code>--xbridge</code>), whose link carries no
+  <code>.stack_sizes</code>;</li>
+<li>the core comes prebuilt (<code>elf_file</code>);</li>
+<li><code>--no-measure-stack-size</code> or <code>--default-stack-size</code> is passed;</li>
+<li>the call graph has a cycle, or reaches a function with no <code>.stack_sizes</code>
+  entry, so the walk yields at best a lower bound (see the stack-contribution
+  overrides below);</li>
+<li>the probe link fails.</li>
+</ul>
+<p>Peano currently builds its compiler-rt builtins (<code>__divsf3</code>, <code>__modsi3</code> and the
+like) without <code>.stack_sizes</code>. <code>aiecc</code> carries their frames per architecture in
+a table generated from the pinned Peano
+(<code>utils/generate_compiler_rt_stack_frames.py</code>), so a kernel that calls them
+still measures exactly. A lit test fails when a Peano update changes a frame.
+Peano's libc and libm are not in the table.</p>
 <h3 id="stack-placement-stack_bank-and-stack_address">Stack placement: <code>stack_bank</code> and <code>stack_address</code><a class="headerlink" href="#stack-placement-stack_bank-and-stack_address" title="Permanent link">&para;</a></h3>
 <p>These optional attributes on <code>aie.core</code> control placement, independently of
 <code>stack_size</code>:</p>
@@ -4042,6 +4135,15 @@ so aiecc leaves it at Peano's unrestricted default rather than promise the
 bank-conflict model something untrue. <code>stack_bank</code> is the attribute that names
 a bank, and it must hold the whole stack -- a <code>stack_bank</code> whose stack runs
 past it is an error, because the two would disagree.</p>
+<p>The legacy stack at offset zero claims bank A when it fits there. Peano
+compiles the core's own object (the core body, MLIR-lowered functions and
+<code>link_with_mode = "merge"</code> kernels) with <code>-aie-stack-addrspace</code> naming bank A,
+and that happens before a measured size exists. Kernels in <code>link_files</code> are
+compiled separately and never carry the claim. A measured stack may therefore
+grow past bank A, provided every frame of the core's own object ends inside
+the bank. When one does not, as with a deep merged kernel, the build fails and
+names the <code>stack_size</code> to declare. A declared size is known before compile, so
+a stack that spans banks is then compiled without the claim.</p>
 <p>Moving within bank A works with both Peano and Chess. Moving to banks B–D
 through <code>aiecc</code> requires Peano compilation and linking, with no separately
 linked kernel inputs (<code>link_files</code>). Use LLVM IR kernels with
@@ -4071,9 +4173,9 @@ requirement of that kernel's whole call subtree and stops the walk there. The
 value is a declaration, not a clamp: an explicit value replaces the computed
 one, even when it is smaller. An explicit <code>0</code> is legal.</p>
 <p>IRON spells it as a keyword on the kernel declaration:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="n">Kernel</span><span class="p">(</span><span class="s2">&quot;recursive_kernel&quot;</span><span class="p">,</span> <span class="s2">&quot;recursive.o&quot;</span><span class="p">,</span> <span class="p">[</span><span class="o">...</span><span class="p">],</span> <span class="n">stack_size_override</span><span class="o">=</span><span class="mi">4096</span><span class="p">)</span>
-<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="n">ExternalFunction</span><span class="p">(</span><span class="s2">&quot;my_kernel&quot;</span><span class="p">,</span> <span class="o">...</span><span class="p">,</span> <span class="n">stack_size_override</span><span class="o">=</span><span class="mi">4096</span><span class="p">)</span>
-<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="n">external_func</span><span class="p">(</span><span class="s2">&quot;my_kernel&quot;</span><span class="p">,</span> <span class="o">...</span><span class="p">,</span> <span class="n">stack_size_override</span><span class="o">=</span><span class="mi">4096</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="n">Kernel</span><span class="p">(</span><span class="s2">"recursive_kernel"</span><span class="p">,</span> <span class="s2">"recursive.o"</span><span class="p">,</span> <span class="p">[</span><span class="o">...</span><span class="p">],</span> <span class="n">stack_size_override</span><span class="o">=</span><span class="mi">4096</span><span class="p">)</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="n">ExternalFunction</span><span class="p">(</span><span class="s2">"my_kernel"</span><span class="p">,</span> <span class="o">...</span><span class="p">,</span> <span class="n">stack_size_override</span><span class="o">=</span><span class="mi">4096</span><span class="p">)</span>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="n">external_func</span><span class="p">(</span><span class="s2">"my_kernel"</span><span class="p">,</span> <span class="o">...</span><span class="p">,</span> <span class="n">stack_size_override</span><span class="o">=</span><span class="mi">4096</span><span class="p">)</span>
 </code></pre></div>
 <h2 id="the-cores-own-sections-data_size">The core's own sections: <code>data_size</code><a class="headerlink" href="#the-cores-own-sections-data_size" title="Permanent link">&para;</a></h2>
 <p>Ordinary, unpinned <code>.data</code>, <code>.rodata</code> and <code>.bss</code> do not go wherever there is
@@ -4086,7 +4188,7 @@ described below.</p>
 </code></pre></div>
 <p><code>aie-assign-buffer-addresses</code> turns the reservation into an <code>aie.buffer</code> marked
 <code>core_data</code> and places it alongside the tile's other buffers:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>%core_data_0_2 = aie.buffer(%tile_0_2) {address = 49152 : i32, core_data, sym_name = &quot;core_data_0_2&quot;} : memref&lt;8192xi8&gt;
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>%core_data_0_2 = aie.buffer(%tile_0_2) {address = 49152 : i32, core_data, sym_name = "core_data_0_2"} : memref&lt;8192xi8&gt;
 </code></pre></div>
 <p><code>aie-translate</code> emits that buffer's extent as the <code>data</code> MEMORY region of the
 linker script. The buffer names no symbol, so nothing else refers to it.</p>
@@ -4135,7 +4237,7 @@ attributes (when both measurements are enabled). A <code>data_size</code> below
 <h2 id="bank-pinned-static-tables-and-lut-checks">Bank-pinned static tables and LUT checks<a class="headerlink" href="#bank-pinned-static-tables-and-lut-checks" title="Permanent link">&para;</a></h2>
 <p>For AIE2/AIE2P, include the installed <code>aie_bank_placement.h</code> in a kernel and
 annotate tables with <code>AIE_BANK_A</code> through <code>AIE_BANK_D</code>. For example:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;aie_bank_placement.h&quot;</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">"aie_bank_placement.h"</span>
 <a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>
 <a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="k">alignas</span><span class="p">(</span><span class="mi">64</span><span class="p">)</span><span class="w"> </span><span class="k">static</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">table_ab</span><span class="p">[</span><span class="mi">16</span><span class="p">]</span><span class="w"> </span><span class="n">AIE_BANK_A</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="cm">/* ... */</span><span class="w"> </span><span class="p">};</span>
 <a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="k">alignas</span><span class="p">(</span><span class="mi">64</span><span class="p">)</span><span class="w"> </span><span class="k">static</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">table_cd</span><span class="p">[</span><span class="mi">16</span><span class="p">]</span><span class="w"> </span><span class="n">AIE_BANK_B</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="cm">/* ... */</span><span class="w"> </span><span class="p">};</span>
@@ -4200,7 +4302,7 @@ statics through its own storage constraints rather than linker regions, so none
 of this applies there.</p>
 <p>A table larger than its bank still cannot be placed, and is now reported while
 reserving rather than by the linker:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>error: &#39;aie.buffer&#39; op this core&#39;s static data pinned to bank 1 requires 32768
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>error: 'aie.buffer' op this core's static data pinned to bank 1 requires 32768
 <a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>bytes, which cannot fit in bank 1 (16384 bytes total)
 </code></pre></div>
 <p>The <strong>default placement check</strong> compares each unambiguous bank-annotated
@@ -4248,7 +4350,7 @@ because its addresses are chosen afterwards. A prebaked core is read for its
 <p><code>data_size</code> cannot express this: it is a size, and what a prebaked ELF occupies
 is a specific range. Declaring the range yourself still works, and is worth
 doing when the ELF is not where <code>aiecc</code> can read it:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>%prebaked = aie.buffer(%tile_0_3) {sym_name = &quot;prebaked_data&quot;, address = 8192 : i32} : memref&lt;4096xi8&gt;
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>%prebaked = aie.buffer(%tile_0_3) {sym_name = "prebaked_data", address = 8192 : i32} : memref&lt;4096xi8&gt;
 </code></pre></div>
 <p>Either way the allocator treats the extent as occupied space, keeps every
 buffer it places clear of it, reports a collision against it by name, and lists
@@ -4260,7 +4362,8 @@ that core gets a <code>data</code> region like any other.</p>
 has to skip them:</p>
 <ul>
 <li><strong><code>--no-measure-stack-size</code></strong> drops the stack measurement and its check, so no
-  <code>measured_stack_size</code> reaches the IR.</li>
+  <code>measured_stack_size</code> reaches the IR and a core without <code>stack_size</code> gets the
+  target default.</li>
 <li><strong><code>--no-measure-data-size</code></strong> drops ordinary static-data measurement before
   placement and after linking, including its <code>data_size</code> check. Per-bank
   measurements and reservations remain enabled. Explicit <code>data_size</code>
@@ -4275,8 +4378,9 @@ has to skip them:</p>
 <li><strong><code>--default-stack-size=&lt;bytes&gt;</code></strong> assumes this many bytes in place of
   <code>AIETargetModel::getDefaultCoreStackSize()</code> for any core without an explicit
   <code>stack_size</code>. The rest of the build then treats that core as if it declared
-  <code>stack_size</code> explicitly, and the diagnostics call the value assumed. A core
-  with an explicit <code>stack_size</code> keeps it.</li>
+  <code>stack_size</code> explicitly, and the diagnostics call the value assumed, so
+  <code>aiecc</code> sizes none of those stacks from the measurement. A core with an
+  explicit <code>stack_size</code> keeps it.</li>
 </ul>
 <h2 id="how-placement-chooses-addresses">How placement chooses addresses<a class="headerlink" href="#how-placement-chooses-addresses" title="Permanent link">&para;</a></h2>
 <p>One allocator places every extent on a tile: the stack, each buffer, the core's
@@ -4304,10 +4408,17 @@ touches the fewest banks can strand the free run a later buffer needs. When a
 buffer has nowhere to go, the allocator undoes an earlier choice and tries that
 buffer's next-best address. It explores in rank order, so the first arrangement
 it tries is the one the ranking prefers and most designs never backtrack at all.</p>
-<p>The search is bounded at 20000 placements per tile — packing around fixed
-obstacles is NP-hard, and the bound is a count rather than a time limit so
-builds stay reproducible. Reaching it is reported (see the diagnostics below)
-rather than passed off as "no such layout exists".</p>
+<p>Backtracking only tries positions flush against what is already placed, so a
+layout where a buffer must sit against one placed after it is out of its reach.
+When the ranked search fails, an exhaustive one takes over: it slides every
+buffer down into address order and chooses which buffer comes next, which
+reaches every layout that exists. Most designs never get there, and those that
+do only need a legal layout, so it does not rank.</p>
+<p>Each search is bounded by the pass's <code>placement-budget</code> option, 100000
+placements per tile by default — packing around fixed obstacles is NP-hard, and
+the bound is a count rather than a time limit so builds stay reproducible.
+Within the bound, "no room" is a proof that no layout exists; reaching it is
+reported (see the diagnostics below) rather than passed off as one.</p>
 <ul>
 <li><strong><code>Buffer(mem_bank=...)</code></strong> pins a buffer to a bank. The pin is honored or the
   build fails; it is never silently dropped.</li>
@@ -4332,12 +4443,27 @@ graph is unavailable. The chess/BCF link produces such an ELF, so a
 requirement is at least M bytes and may be higher</code> (warning).</strong> The linked core
 carries no <code>.stack_sizes</code> entry for the functions the diagnostic names, and
 their frames count as 0. <code>M</code> is therefore a lower bound: <code>aiecc</code> still fails a
-core that declares less than <code>M</code>, and writes no <code>measured_stack_size</code>. Compile
-the named source with <code>-fstack-size-section</code>, or set <code>stack_size_override</code> on
-the affected kernel.</p>
-<p><strong><code>stack_size is absent, so this core uses the device default of M bytes, but
-it needs N bytes</code> (error).</strong> Set <code>stack_size = N</code>, or <code>Worker(stack_size=N)</code>,
-and rebuild.</p>
+core that declares less than <code>M</code>, and writes no <code>measured_stack_size</code>; a core
+without <code>stack_size</code> keeps the device default. Compile the named source with
+<code>-fstack-size-section</code>, or set <code>stack_size_override</code> on the affected kernel.</p>
+<p><strong><code>stack_size is absent and this core's stack could not be measured exactly
+before placement, so it uses the device default of M bytes, but it needs at
+least N bytes</code> (error).</strong> One of the fallback cases under
+<a href="#the-stack-stack_size">The stack</a> applied, and the post-link check caught the
+shortfall. Set <code>stack_size = N</code>, or <code>Worker(stack_size=N)</code>, and rebuild, or
+remove the cause, for example by compiling a named source with
+<code>-fstack-size-section</code>.</p>
+<p><strong><code>this core needs a N-byte stack. Its own code was compiled to keep its stack
+frames in memory bank A, but those frames reach F bytes into the stack, past
+the R bytes left in that bank</code> (error).</strong> A measured stack outgrew the bank
+claim described under
+<a href="#stack-placement-stack_bank-and-stack_address">Stack placement</a>. Set
+<code>stack_size = N</code> and rebuild, so that the core is compiled for a stack that
+spans banks.</p>
+<p><strong><code>internal error: placement reserved M bytes of stack from this core's probe
+link, but its final link needs N bytes</code> (error).</strong> The probe and the final link
+disagree, which they should not. Please file an issue with the design.
+Setting <code>stack_size = N</code> works around it.</p>
 <p><strong><code>stack_size = M is insufficient: this core needs N bytes</code> (error).</strong> The same
 case, with <code>stack_size</code> already set explicitly to a value below the
 requirement. Increase it to <code>N</code> and rebuild.</p>
@@ -4385,12 +4511,13 @@ sections (data_size)</code>, or <code>this core's static data pinned to bank B</
 may well exist while being too fragmented to use, so shrinking any extent can
 help, not only the one named. Lower <code>data_size</code>, shrink or move buffers, or
 lower <code>stack_size</code>.</p>
-<p><strong><code>the search hit its 20000-placement budget with arrangements still untried</code>
+<p><strong><code>the search hit its 100000-placement budget with arrangements still untried</code>
 (note, attached to the error above).</strong> The allocator gave up rather than proved
 the design infeasible, so a layout may exist that it did not reach. This is
-rare and worth reporting: please file an issue with the design. Pinning a
-buffer or two with <code>mem_bank</code> cuts the search down and often gets a build
-through in the meantime.</p>
+rare and worth reporting: please file an issue with the design. Raising
+<code>placement-budget</code> (<code>--aie-assign-buffer-addresses='placement-budget=N'</code>) lets
+the search go further, and pinning a buffer or two with <code>mem_bank</code> cuts it down;
+either often gets a build through in the meantime.</p>
 <p><strong><code>&lt;what&gt; requires N bytes, which cannot fit in bank B (C bytes total)</code>
 (error).</strong> A <code>mem_bank</code> pin, or a kernel's bank-pinned static data, asks for
 more than a whole bank holds. Nothing about the rest of the design can fix
@@ -4453,13 +4580,13 @@ different bank, or move what is in the way.</p>
         
         
           
-          <a href="../hrx_runtime/" class="md-footer__link md-footer__link--next" aria-label="Next: HRX Runtime (amdxdna)">
+          <a href="../routing/" class="md-footer__link md-footer__link--next" aria-label="Next: Routing">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                HRX Runtime (amdxdna)
+                Routing
               </div>
             </div>
             <div class="md-footer__button md-icon">
@@ -4510,7 +4637,7 @@ different bank, or move what is in the way.</p>
     
     
     
-    <a href="mailto:aup@amd.com" target="_blank" rel="noopener" title="AMD University Program" class="md-social__link">
+    <a href="https://www.amd.com/en/corporate/university-program.html" target="_blank" rel="noopener" title="AMD University Program" class="md-social__link">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M536.4-26.3c9.8-3.5 20.6-1 28 6.3s9.8 18.2 6.3 28l-178 496.9c-5 13.9-18.1 23.1-32.8 23.1-14.2 0-27-8.6-32.3-21.7l-64.2-158c-4.5-11-2.5-23.6 5.2-32.6l94.5-112.4c5.1-6.1 4.7-15-.9-20.6s-14.6-6-20.6-.9l-112.4 94.3c-9.1 7.6-21.6 9.6-32.6 5.2L38.1 216.8c-13.1-5.3-21.7-18.1-21.7-32.3 0-14.7 9.2-27.8 23.1-32.8z"/></svg>
     </a>
   
@@ -4529,10 +4656,10 @@ different bank, or move what is in the way.</p>
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.indexes", "navigation.path", "navigation.top", "navigation.footer", "search.suggest", "search.highlight", "content.tabs.link", "content.code.copy", "content.code.annotate", "toc.follow"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"alias": true, "default": "latest", "provider": "mike"}}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.indexes", "navigation.path", "navigation.top", "navigation.footer", "search.suggest", "search.highlight", "content.tabs.link", "content.code.copy", "content.code.annotate", "toc.follow"], "search": "../../assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"alias": true, "default": "latest", "provider": "mike"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      <script src="../../assets/javascripts/bundle.c21346df.min.js"></script>
       
     
   </body>
