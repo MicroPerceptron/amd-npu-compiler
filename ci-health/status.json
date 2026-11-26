@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-25T18:50:43+00:00",
+ "generated_at": "2026-11-26T00:55:40+00:00",
  "repo": "MicroPerceptron/amd-npu-compiler",
  "window_days": 14,
  "critical": [
@@ -21,77 +21,94 @@
     "rate": 0.0
    },
    "latest_main": {
-    "id": 45294235821,
-    "url": "https://github.com/MicroPerceptron/amd-npu-compiler/actions/runs/45294235821",
+    "id": 45515241236,
+    "url": "https://github.com/MicroPerceptron/amd-npu-compiler/actions/runs/45515241236",
     "status": "completed",
     "conclusion": "cancelled",
-    "created_at": "2026-11-24T00:05:17Z",
-    "run_started_at": "2026-11-24T00:05:17Z",
-    "updated_at": "2026-11-25T00:05:05Z",
+    "created_at": "2026-11-25T00:05:04Z",
+    "run_started_at": "2026-11-25T00:05:04Z",
+    "updated_at": "2026-11-26T00:05:06Z",
     "head_sha": "a75319190bdb1ca83703433b2aa8f8f52bc80565",
     "title": "Build and Test with AIE tools on Ryzen AI",
     "attempt": 1,
-    "outcome": "cancelled",
+    "outcome": "timed_out",
     "waited": 0.0,
-    "took": 1439.8,
+    "took": 1440.0,
     "runners": [],
     "runners_version": 2
    },
    "newest_main": {
-    "id": 45515241236,
-    "url": "https://github.com/MicroPerceptron/amd-npu-compiler/actions/runs/45515241236",
+    "id": 45726163813,
+    "url": "https://github.com/MicroPerceptron/amd-npu-compiler/actions/runs/45726163813",
     "status": "queued",
     "conclusion": null,
-    "created_at": "2026-11-25T00:05:04Z",
-    "run_started_at": "2026-11-25T00:05:04Z",
-    "updated_at": "2026-11-25T00:05:08Z",
-    "head_sha": "a75319190bdb1ca83703433b2aa8f8f52bc80565",
+    "created_at": "2026-11-26T00:05:16Z",
+    "run_started_at": "2026-11-26T00:05:16Z",
+    "updated_at": "2026-11-26T00:05:16Z",
+    "head_sha": "159b7f7ad4a03128a2c20337dd77164522077843",
     "title": "Build and Test with AIE tools on Ryzen AI",
     "attempt": 1
    },
    "latest_main_jobs": [
     {
+     "name": "Pure HRX Build and Run (XRT-free packaging + libhrx dispatch)",
+     "url": "https://github.com/MicroPerceptron/amd-npu-compiler/actions/runs/45515241236/job/138872871928",
+     "status": "completed",
+     "conclusion": "cancelled",
+     "created_at": "2026-11-25T00:05:05Z",
+     "started_at": "2026-11-25T00:05:05Z",
+     "runner": "",
+     "outcome": "timed_out"
+    },
+    {
      "name": "Pure HRX Build-Only (Windows, XRT-free packaging + HRX C++ compile)",
-     "url": "https://github.com/MicroPerceptron/amd-npu-compiler/actions/runs/45294235821/job/138110456876",
+     "url": "https://github.com/MicroPerceptron/amd-npu-compiler/actions/runs/45515241236/job/138872872214",
      "status": "completed",
      "conclusion": "success",
-     "created_at": "2026-11-24T00:05:18Z",
-     "started_at": "2026-11-24T00:05:20Z",
-     "runner": "GitHub Actions 1000084778",
+     "created_at": "2026-11-25T00:05:05Z",
+     "started_at": "2026-11-25T00:05:07Z",
+     "runner": "GitHub Actions 1000085551",
      "outcome": "passed"
     },
     {
-     "name": "Run Tests and Examples on Ryzen AI (Built from Source) (aie2-4col)",
-     "url": "https://github.com/MicroPerceptron/amd-npu-compiler/actions/runs/45294235821/job/138110457288",
-     "status": "completed",
-     "conclusion": "cancelled",
-     "created_at": "2026-11-24T00:05:18Z",
-     "started_at": "2026-11-24T00:05:18Z",
-     "runner": "",
-     "outcome": "cancelled"
-    },
-    {
-     "name": "Pure HRX Build and Run (XRT-free packaging + libhrx dispatch)",
-     "url": "https://github.com/MicroPerceptron/amd-npu-compiler/actions/runs/45294235821/job/138110457297",
-     "status": "completed",
-     "conclusion": "cancelled",
-     "created_at": "2026-11-24T00:05:18Z",
-     "started_at": "2026-11-24T00:05:18Z",
-     "runner": "",
-     "outcome": "cancelled"
-    },
-    {
      "name": "Run Tests and Examples on Ryzen AI (Built from Source) (aie2p-8col)",
-     "url": "https://github.com/MicroPerceptron/amd-npu-compiler/actions/runs/45294235821/job/138110457551",
+     "url": "https://github.com/MicroPerceptron/amd-npu-compiler/actions/runs/45515241236/job/138872872423",
      "status": "completed",
      "conclusion": "cancelled",
-     "created_at": "2026-11-24T00:05:18Z",
-     "started_at": "2026-11-24T00:05:18Z",
+     "created_at": "2026-11-25T00:05:05Z",
+     "started_at": "2026-11-25T00:05:05Z",
      "runner": "",
-     "outcome": "cancelled"
+     "outcome": "timed_out"
+    },
+    {
+     "name": "Run Tests and Examples on Ryzen AI (Built from Source) (aie2-4col)",
+     "url": "https://github.com/MicroPerceptron/amd-npu-compiler/actions/runs/45515241236/job/138872872461",
+     "status": "completed",
+     "conclusion": "cancelled",
+     "created_at": "2026-11-25T00:05:05Z",
+     "started_at": "2026-11-25T00:05:05Z",
+     "runner": "",
+     "outcome": "timed_out"
     }
    ],
    "main_runs": [
+    {
+     "id": 45515241236,
+     "url": "https://github.com/MicroPerceptron/amd-npu-compiler/actions/runs/45515241236",
+     "status": "completed",
+     "conclusion": "cancelled",
+     "created_at": "2026-11-25T00:05:04Z",
+     "run_started_at": "2026-11-25T00:05:04Z",
+     "updated_at": "2026-11-26T00:05:06Z",
+     "head_sha": "a75319190bdb1ca83703433b2aa8f8f52bc80565",
+     "title": "Build and Test with AIE tools on Ryzen AI",
+     "attempt": 1,
+     "outcome": "timed_out",
+     "waited": 0.0,
+     "took": 1440.0,
+     "runners": [],
+     "runners_version": 2
+    },
     {
      "id": 45294235821,
      "url": "https://github.com/MicroPerceptron/amd-npu-compiler/actions/runs/45294235821",
@@ -295,23 +312,6 @@
      "took": 1439.7,
      "runners": [],
      "runners_version": 2
-    },
-    {
-     "id": 43124656241,
-     "url": "https://github.com/MicroPerceptron/amd-npu-compiler/actions/runs/43124656241",
-     "status": "completed",
-     "conclusion": "cancelled",
-     "created_at": "2026-11-12T00:05:09Z",
-     "run_started_at": "2026-11-12T00:05:09Z",
-     "updated_at": "2026-11-13T00:05:11Z",
-     "head_sha": "a75319190bdb1ca83703433b2aa8f8f52bc80565",
-     "title": "Build and Test with AIE tools on Ryzen AI",
-     "attempt": 1,
-     "outcome": "timed_out",
-     "waited": 0.0,
-     "took": 1440.0,
-     "runners": [],
-     "runners_version": 2
     }
    ],
    "pull_requests": {
@@ -343,54 +343,71 @@
    "main": {
     "passed": 0,
     "failed": 0,
-    "timed_out": 6,
+    "timed_out": 7,
     "runner_lost": 0,
     "no_runner": 0,
-    "cancelled": 7,
+    "cancelled": 6,
     "rate": 0.0
    },
    "latest_main": {
-    "id": 45294778384,
-    "url": "https://github.com/MicroPerceptron/amd-npu-compiler/actions/runs/45294778384",
+    "id": 45515889292,
+    "url": "https://github.com/MicroPerceptron/amd-npu-compiler/actions/runs/45515889292",
     "status": "completed",
     "conclusion": "cancelled",
-    "created_at": "2026-11-24T00:09:08Z",
-    "run_started_at": "2026-11-24T00:09:08Z",
-    "updated_at": "2026-11-25T00:09:10Z",
+    "created_at": "2026-11-25T00:09:48Z",
+    "run_started_at": "2026-11-25T00:09:48Z",
+    "updated_at": "2026-11-26T00:09:57Z",
     "head_sha": "a75319190bdb1ca83703433b2aa8f8f52bc80565",
     "title": "Build and Test with AIE tools on Ryzen AI (Windows)",
     "attempt": 1,
     "outcome": "timed_out",
     "waited": 0,
-    "took": 1440.0,
+    "took": 1440.1,
     "runners": [],
     "runners_version": 2
    },
    "newest_main": {
-    "id": 45515889292,
-    "url": "https://github.com/MicroPerceptron/amd-npu-compiler/actions/runs/45515889292",
+    "id": 45726716491,
+    "url": "https://github.com/MicroPerceptron/amd-npu-compiler/actions/runs/45726716491",
     "status": "queued",
     "conclusion": null,
-    "created_at": "2026-11-25T00:09:48Z",
-    "run_started_at": "2026-11-25T00:09:48Z",
-    "updated_at": "2026-11-25T00:09:48Z",
-    "head_sha": "a75319190bdb1ca83703433b2aa8f8f52bc80565",
+    "created_at": "2026-11-26T00:09:41Z",
+    "run_started_at": "2026-11-26T00:09:41Z",
+    "updated_at": "2026-11-26T00:09:41Z",
+    "head_sha": "159b7f7ad4a03128a2c20337dd77164522077843",
     "title": "Build and Test with AIE tools on Ryzen AI (Windows)",
     "attempt": 1
    },
    "latest_main_jobs": [
     {
      "name": "Run Tests and Examples on Ryzen AI (Built from Source, Windows)",
-     "url": "https://github.com/MicroPerceptron/amd-npu-compiler/actions/runs/45294778384/job/138112297687",
+     "url": "https://github.com/MicroPerceptron/amd-npu-compiler/actions/runs/45515889292/job/138875081592",
      "status": "completed",
      "conclusion": "cancelled",
-     "created_at": "2026-11-24T00:09:09Z",
-     "started_at": "2026-11-24T00:09:09Z",
+     "created_at": "2026-11-25T00:09:49Z",
+     "started_at": "2026-11-25T00:09:49Z",
      "runner": "",
      "outcome": "timed_out"
     }
    ],
    "main_runs": [
+    {
+     "id": 45515889292,
+     "url": "https://github.com/MicroPerceptron/amd-npu-compiler/actions/runs/45515889292",
+     "status": "completed",
+     "conclusion": "cancelled",
+     "created_at": "2026-11-25T00:09:48Z",
+     "run_started_at": "2026-11-25T00:09:48Z",
+     "updated_at": "2026-11-26T00:09:57Z",
+     "head_sha": "a75319190bdb1ca83703433b2aa8f8f52bc80565",
+     "title": "Build and Test with AIE tools on Ryzen AI (Windows)",
+     "attempt": 1,
+     "outcome": "timed_out",
+     "waited": 0,
+     "took": 1440.1,
+     "runners": [],
+     "runners_version": 2
+    },
     {
      "id": 45294778384,
      "url": "https://github.com/MicroPerceptron/amd-npu-compiler/actions/runs/45294778384",
@@ -594,23 +611,6 @@
      "took": 1439.8,
      "runners": [],
      "runners_version": 2
-    },
-    {
-     "id": 43125212851,
-     "url": "https://github.com/MicroPerceptron/amd-npu-compiler/actions/runs/43125212851",
-     "status": "completed",
-     "conclusion": "cancelled",
-     "created_at": "2026-11-12T00:09:33Z",
-     "run_started_at": "2026-11-12T00:09:33Z",
-     "updated_at": "2026-11-13T00:09:20Z",
-     "head_sha": "a75319190bdb1ca83703433b2aa8f8f52bc80565",
-     "title": "Build and Test with AIE tools on Ryzen AI (Windows)",
-     "attempt": 1,
-     "outcome": "cancelled",
-     "waited": 0,
-     "took": 1439.8,
-     "runners": [],
-     "runners_version": 2
     }
    ],
    "pull_requests": {
@@ -649,36 +649,53 @@
     "rate": 0.357
    },
    "latest_main": {
-    "id": 45517260383,
-    "url": "https://github.com/MicroPerceptron/amd-npu-compiler/actions/runs/45517260383",
+    "id": 45727921699,
+    "url": "https://github.com/MicroPerceptron/amd-npu-compiler/actions/runs/45727921699",
     "status": "completed",
-    "conclusion": "failure",
-    "created_at": "2026-11-25T00:20:04Z",
-    "run_started_at": "2026-11-25T00:20:04Z",
-    "updated_at": "2026-11-25T00:42:43Z",
-    "head_sha": "a75319190bdb1ca83703433b2aa8f8f52bc80565",
+    "conclusion": "success",
+    "created_at": "2026-11-26T00:19:34Z",
+    "run_started_at": "2026-11-26T00:19:34Z",
+    "updated_at": "2026-11-26T00:51:30Z",
+    "head_sha": "159b7f7ad4a03128a2c20337dd77164522077843",
     "title": "Compile across platforms",
     "attempt": 1,
-    "outcome": "failed",
+    "outcome": "passed",
     "waited": 0.0,
-    "took": 22.6,
+    "took": 31.9,
     "runners": [],
     "runners_version": 2
    },
    "newest_main": {
-    "id": 45517260383,
-    "url": "https://github.com/MicroPerceptron/amd-npu-compiler/actions/runs/45517260383",
+    "id": 45727921699,
+    "url": "https://github.com/MicroPerceptron/amd-npu-compiler/actions/runs/45727921699",
     "status": "completed",
-    "conclusion": "failure",
-    "created_at": "2026-11-25T00:20:04Z",
-    "run_started_at": "2026-11-25T00:20:04Z",
-    "updated_at": "2026-11-25T00:42:43Z",
-    "head_sha": "a75319190bdb1ca83703433b2aa8f8f52bc80565",
+    "conclusion": "success",
+    "created_at": "2026-11-26T00:19:34Z",
+    "run_started_at": "2026-11-26T00:19:34Z",
+    "updated_at": "2026-11-26T00:51:30Z",
+    "head_sha": "159b7f7ad4a03128a2c20337dd77164522077843",
     "title": "Compile across platforms",
     "attempt": 1
    },
    "latest_main_jobs": null,
    "main_runs": [
+    {
+     "id": 45727921699,
+     "url": "https://github.com/MicroPerceptron/amd-npu-compiler/actions/runs/45727921699",
+     "status": "completed",
+     "conclusion": "success",
+     "created_at": "2026-11-26T00:19:34Z",
+     "run_started_at": "2026-11-26T00:19:34Z",
+     "updated_at": "2026-11-26T00:51:30Z",
+     "head_sha": "159b7f7ad4a03128a2c20337dd77164522077843",
+     "title": "Compile across platforms",
+     "attempt": 1,
+     "outcome": "passed",
+     "waited": 0.0,
+     "took": 31.9,
+     "runners": [],
+     "runners_version": 2
+    },
     {
      "id": 45517260383,
      "url": "https://github.com/MicroPerceptron/amd-npu-compiler/actions/runs/45517260383",
@@ -899,23 +916,6 @@
      "took": 22.3,
      "runners": [],
      "runners_version": 2
-    },
-    {
-     "id": 43126468730,
-     "url": "https://github.com/MicroPerceptron/amd-npu-compiler/actions/runs/43126468730",
-     "status": "completed",
-     "conclusion": "success",
-     "created_at": "2026-11-12T00:19:42Z",
-     "run_started_at": "2026-11-12T00:19:42Z",
-     "updated_at": "2026-11-12T00:41:43Z",
-     "head_sha": "a75319190bdb1ca83703433b2aa8f8f52bc80565",
-     "title": "Compile across platforms",
-     "attempt": 1,
-     "outcome": "passed",
-     "waited": 0.0,
-     "took": 22.0,
-     "runners": [],
-     "runners_version": 2
     }
    ],
    "pull_requests": {
@@ -933,8 +933,8 @@
     "flaky": 0,
     "rate": null
    },
-   "minutes_median": 22.3,
-   "minutes_p90": 23.9,
+   "minutes_median": 22.5,
+   "minutes_p90": 31.9,
    "queued_median": 0.0
   },
   {
@@ -954,36 +954,53 @@
     "rate": 0.357
    },
    "latest_main": {
-    "id": 45515112156,
-    "url": "https://github.com/MicroPerceptron/amd-npu-compiler/actions/runs/45515112156",
+    "id": 45726016874,
+    "url": "https://github.com/MicroPerceptron/amd-npu-compiler/actions/runs/45726016874",
     "status": "completed",
-    "conclusion": "failure",
-    "created_at": "2026-11-25T00:04:06Z",
-    "run_started_at": "2026-11-25T00:04:06Z",
-    "updated_at": "2026-11-25T00:21:17Z",
-    "head_sha": "a75319190bdb1ca83703433b2aa8f8f52bc80565",
+    "conclusion": "success",
+    "created_at": "2026-11-26T00:04:05Z",
+    "run_started_at": "2026-11-26T00:04:05Z",
+    "updated_at": "2026-11-26T00:32:17Z",
+    "head_sha": "159b7f7ad4a03128a2c20337dd77164522077843",
     "title": "Build and Test across Python versions",
     "attempt": 1,
-    "outcome": "failed",
+    "outcome": "passed",
     "waited": 0.0,
-    "took": 17.1,
+    "took": 28.2,
     "runners": [],
     "runners_version": 2
    },
    "newest_main": {
-    "id": 45515112156,
-    "url": "https://github.com/MicroPerceptron/amd-npu-compiler/actions/runs/45515112156",
+    "id": 45726016874,
+    "url": "https://github.com/MicroPerceptron/amd-npu-compiler/actions/runs/45726016874",
     "status": "completed",
-    "conclusion": "failure",
-    "created_at": "2026-11-25T00:04:06Z",
-    "run_started_at": "2026-11-25T00:04:06Z",
-    "updated_at": "2026-11-25T00:21:17Z",
-    "head_sha": "a75319190bdb1ca83703433b2aa8f8f52bc80565",
+    "conclusion": "success",
+    "created_at": "2026-11-26T00:04:05Z",
+    "run_started_at": "2026-11-26T00:04:05Z",
+    "updated_at": "2026-11-26T00:32:17Z",
+    "head_sha": "159b7f7ad4a03128a2c20337dd77164522077843",
     "title": "Build and Test across Python versions",
     "attempt": 1
    },
    "latest_main_jobs": null,
    "main_runs": [
+    {
+     "id": 45726016874,
+     "url": "https://github.com/MicroPerceptron/amd-npu-compiler/actions/runs/45726016874",
+     "status": "completed",
+     "conclusion": "success",
+     "created_at": "2026-11-26T00:04:05Z",
+     "run_started_at": "2026-11-26T00:04:05Z",
+     "updated_at": "2026-11-26T00:32:17Z",
+     "head_sha": "159b7f7ad4a03128a2c20337dd77164522077843",
+     "title": "Build and Test across Python versions",
+     "attempt": 1,
+     "outcome": "passed",
+     "waited": 0.0,
+     "took": 28.2,
+     "runners": [],
+     "runners_version": 2
+    },
     {
      "id": 45515112156,
      "url": "https://github.com/MicroPerceptron/amd-npu-compiler/actions/runs/45515112156",
@@ -1204,23 +1221,6 @@
      "took": 16.2,
      "runners": [],
      "runners_version": 2
-    },
-    {
-     "id": 43124533009,
-     "url": "https://github.com/MicroPerceptron/amd-npu-compiler/actions/runs/43124533009",
-     "status": "completed",
-     "conclusion": "success",
-     "created_at": "2026-11-12T00:04:09Z",
-     "run_started_at": "2026-11-12T00:04:09Z",
-     "updated_at": "2026-11-12T00:23:46Z",
-     "head_sha": "a75319190bdb1ca83703433b2aa8f8f52bc80565",
-     "title": "Build and Test across Python versions",
-     "attempt": 1,
-     "outcome": "passed",
-     "waited": 0.1,
-     "took": 19.6,
-     "runners": [],
-     "runners_version": 2
     }
    ],
    "pull_requests": {
@@ -1239,7 +1239,7 @@
     "rate": null
    },
    "minutes_median": 17.9,
-   "minutes_p90": 19.6,
+   "minutes_p90": 28.2,
    "queued_median": 0.0
   },
   {
@@ -1259,36 +1259,53 @@
     "rate": 1.0
    },
    "latest_main": {
-    "id": 45517764371,
-    "url": "https://github.com/MicroPerceptron/amd-npu-compiler/actions/runs/45517764371",
+    "id": 45728369394,
+    "url": "https://github.com/MicroPerceptron/amd-npu-compiler/actions/runs/45728369394",
     "status": "completed",
     "conclusion": "success",
-    "created_at": "2026-11-25T00:23:55Z",
-    "run_started_at": "2026-11-25T00:23:55Z",
-    "updated_at": "2026-11-25T00:26:12Z",
-    "head_sha": "a75319190bdb1ca83703433b2aa8f8f52bc80565",
+    "created_at": "2026-11-26T00:23:18Z",
+    "run_started_at": "2026-11-26T00:23:18Z",
+    "updated_at": "2026-11-26T00:26:09Z",
+    "head_sha": "159b7f7ad4a03128a2c20337dd77164522077843",
     "title": "Lint and Format",
     "attempt": 1,
     "outcome": "passed",
     "waited": 0.0,
-    "took": 2.3,
+    "took": 2.8,
     "runners": [],
     "runners_version": 2
    },
    "newest_main": {
-    "id": 45517764371,
-    "url": "https://github.com/MicroPerceptron/amd-npu-compiler/actions/runs/45517764371",
+    "id": 45728369394,
+    "url": "https://github.com/MicroPerceptron/amd-npu-compiler/actions/runs/45728369394",
     "status": "completed",
     "conclusion": "success",
-    "created_at": "2026-11-25T00:23:55Z",
-    "run_started_at": "2026-11-25T00:23:55Z",
-    "updated_at": "2026-11-25T00:26:12Z",
-    "head_sha": "a75319190bdb1ca83703433b2aa8f8f52bc80565",
+    "created_at": "2026-11-26T00:23:18Z",
+    "run_started_at": "2026-11-26T00:23:18Z",
+    "updated_at": "2026-11-26T00:26:09Z",
+    "head_sha": "159b7f7ad4a03128a2c20337dd77164522077843",
     "title": "Lint and Format",
     "attempt": 1
    },
    "latest_main_jobs": null,
    "main_runs": [
+    {
+     "id": 45728369394,
+     "url": "https://github.com/MicroPerceptron/amd-npu-compiler/actions/runs/45728369394",
+     "status": "completed",
+     "conclusion": "success",
+     "created_at": "2026-11-26T00:23:18Z",
+     "run_started_at": "2026-11-26T00:23:18Z",
+     "updated_at": "2026-11-26T00:26:09Z",
+     "head_sha": "159b7f7ad4a03128a2c20337dd77164522077843",
+     "title": "Lint and Format",
+     "attempt": 1,
+     "outcome": "passed",
+     "waited": 0.0,
+     "took": 2.8,
+     "runners": [],
+     "runners_version": 2
+    },
     {
      "id": 45517764371,
      "url": "https://github.com/MicroPerceptron/amd-npu-compiler/actions/runs/45517764371",
@@ -1509,23 +1526,6 @@
      "took": 2.4,
      "runners": [],
      "runners_version": 2
-    },
-    {
-     "id": 43127024274,
-     "url": "https://github.com/MicroPerceptron/amd-npu-compiler/actions/runs/43127024274",
-     "status": "completed",
-     "conclusion": "success",
-     "created_at": "2026-11-12T00:24:18Z",
-     "run_started_at": "2026-11-12T00:24:18Z",
-     "updated_at": "2026-11-12T00:26:51Z",
-     "head_sha": "a75319190bdb1ca83703433b2aa8f8f52bc80565",
-     "title": "Lint and Format",
-     "attempt": 1,
-     "outcome": "passed",
-     "waited": 0.0,
-     "took": 2.5,
-     "runners": [],
-     "runners_version": 2
     }
    ],
    "pull_requests": {
@@ -1543,7 +1543,7 @@
     "flaky": 0,
     "rate": null
    },
-   "minutes_median": 2.5,
+   "minutes_median": 2.6,
    "minutes_p90": 3.3,
    "queued_median": 0.0
   }
@@ -2408,6 +2408,30 @@
    "why": "early warning that upstream LLVM broke the build",
    "runs": [
     {
+     "id": 45725915083,
+     "url": "https://github.com/MicroPerceptron/amd-npu-compiler/actions/runs/45725915083",
+     "status": "completed",
+     "conclusion": "success",
+     "created_at": "2026-11-26T00:03:16Z",
+     "run_started_at": "2026-11-26T00:03:16Z",
+     "updated_at": "2026-11-26T00:48:54Z",
+     "head_sha": "159b7f7ad4a03128a2c20337dd77164522077843",
+     "title": "MLIR Distro",
+     "attempt": 1
+    },
+    {
+     "id": 45690870183,
+     "url": "https://github.com/MicroPerceptron/amd-npu-compiler/actions/runs/45690870183",
+     "status": "completed",
+     "conclusion": "success",
+     "created_at": "2026-11-25T20:01:17Z",
+     "run_started_at": "2026-11-25T20:01:17Z",
+     "updated_at": "2026-11-25T20:25:29Z",
+     "head_sha": "159b7f7ad4a03128a2c20337dd77164522077843",
+     "title": "MLIR Distro",
+     "attempt": 1
+    },
+    {
      "id": 45650422282,
      "url": "https://github.com/MicroPerceptron/amd-npu-compiler/actions/runs/45650422282",
      "status": "completed",
@@ -2523,30 +2547,6 @@
      "created_at": "2026-11-24T04:01:10Z",
      "run_started_at": "2026-11-24T04:01:10Z",
      "updated_at": "2026-11-24T04:32:34Z",
-     "head_sha": "a75319190bdb1ca83703433b2aa8f8f52bc80565",
-     "title": "MLIR Distro",
-     "attempt": 1
-    },
-    {
-     "id": 45293948052,
-     "url": "https://github.com/MicroPerceptron/amd-npu-compiler/actions/runs/45293948052",
-     "status": "completed",
-     "conclusion": "success",
-     "created_at": "2026-11-24T00:03:12Z",
-     "run_started_at": "2026-11-24T00:03:12Z",
-     "updated_at": "2026-11-24T02:13:04Z",
-     "head_sha": "a75319190bdb1ca83703433b2aa8f8f52bc80565",
-     "title": "MLIR Distro",
-     "attempt": 1
-    },
-    {
-     "id": 45254970983,
-     "url": "https://github.com/MicroPerceptron/amd-npu-compiler/actions/runs/45254970983",
-     "status": "completed",
-     "conclusion": "success",
-     "created_at": "2026-11-23T20:01:21Z",
-     "run_started_at": "2026-11-23T20:01:21Z",
-     "updated_at": "2026-11-23T22:53:04Z",
      "head_sha": "a75319190bdb1ca83703433b2aa8f8f52bc80565",
      "title": "MLIR Distro",
      "attempt": 1
@@ -2714,6 +2714,18 @@
    "why": "the Docker build against Ryzen AI Software",
    "runs": [
     {
+     "id": 45725732305,
+     "url": "https://github.com/MicroPerceptron/amd-npu-compiler/actions/runs/45725732305",
+     "status": "completed",
+     "conclusion": "failure",
+     "created_at": "2026-11-26T00:01:47Z",
+     "run_started_at": "2026-11-26T00:01:47Z",
+     "updated_at": "2026-11-26T00:03:54Z",
+     "head_sha": "159b7f7ad4a03128a2c20337dd77164522077843",
+     "title": "Build and Test with Ryzen AI Sofware",
+     "attempt": 1
+    },
+    {
      "id": 45514826787,
      "url": "https://github.com/MicroPerceptron/amd-npu-compiler/actions/runs/45514826787",
      "status": "completed",
@@ -2841,18 +2853,6 @@
      "created_at": "2026-11-15T00:02:07Z",
      "run_started_at": "2026-11-15T00:02:07Z",
      "updated_at": "2026-11-15T00:05:18Z",
-     "head_sha": "a75319190bdb1ca83703433b2aa8f8f52bc80565",
-     "title": "Build and Test with Ryzen AI Sofware",
-     "attempt": 1
-    },
-    {
-     "id": 43531365901,
-     "url": "https://github.com/MicroPerceptron/amd-npu-compiler/actions/runs/43531365901",
-     "status": "completed",
-     "conclusion": "failure",
-     "created_at": "2026-11-14T00:01:53Z",
-     "run_started_at": "2026-11-14T00:01:53Z",
-     "updated_at": "2026-11-14T00:05:04Z",
      "head_sha": "a75319190bdb1ca83703433b2aa8f8f52bc80565",
      "title": "Build and Test with Ryzen AI Sofware",
      "attempt": 1
