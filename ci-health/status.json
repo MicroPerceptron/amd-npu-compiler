@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-27T12:50:37+00:00",
+ "generated_at": "2026-11-27T18:50:04+00:00",
  "repo": "MicroPerceptron/amd-npu-compiler",
  "window_days": 14,
  "critical": [
@@ -2452,6 +2452,18 @@
    "why": "early warning that upstream LLVM broke the build",
    "runs": [
     {
+     "id": 46029946198,
+     "url": "https://github.com/MicroPerceptron/amd-npu-compiler/actions/runs/46029946198",
+     "status": "completed",
+     "conclusion": "success",
+     "created_at": "2026-11-27T16:01:02Z",
+     "run_started_at": "2026-11-27T16:01:02Z",
+     "updated_at": "2026-11-27T16:23:35Z",
+     "head_sha": "159b7f7ad4a03128a2c20337dd77164522077843",
+     "title": "MLIR Distro",
+     "attempt": 1
+    },
+    {
      "id": 45995212723,
      "url": "https://github.com/MicroPerceptron/amd-npu-compiler/actions/runs/45995212723",
      "status": "completed",
@@ -2579,18 +2591,6 @@
      "created_at": "2026-11-25T20:01:17Z",
      "run_started_at": "2026-11-25T20:01:17Z",
      "updated_at": "2026-11-25T20:25:29Z",
-     "head_sha": "159b7f7ad4a03128a2c20337dd77164522077843",
-     "title": "MLIR Distro",
-     "attempt": 1
-    },
-    {
-     "id": 45650422282,
-     "url": "https://github.com/MicroPerceptron/amd-npu-compiler/actions/runs/45650422282",
-     "status": "completed",
-     "conclusion": "success",
-     "created_at": "2026-11-25T16:01:13Z",
-     "run_started_at": "2026-11-25T16:01:13Z",
-     "updated_at": "2026-11-25T18:27:31Z",
      "head_sha": "159b7f7ad4a03128a2c20337dd77164522077843",
      "title": "MLIR Distro",
      "attempt": 1
