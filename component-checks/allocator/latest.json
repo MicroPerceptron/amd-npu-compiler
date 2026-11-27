@@ -1,9 +1,9 @@
 {
  "schema": 1,
  "target": "allocator",
- "id": "45748386504",
- "url": "https://github.com/MicroPerceptron/amd-npu-compiler/actions/runs/45748386504",
- "date": "2026-11-26T03:21:26+00:00",
+ "id": "45933686533",
+ "url": "https://github.com/MicroPerceptron/amd-npu-compiler/actions/runs/45933686533",
+ "date": "2026-11-27T03:21:24+00:00",
  "commit": {
   "id": "159b7f7ad4a03128a2c20337dd77164522077843",
   "url": "https://github.com/Xilinx/mlir-aie/commit/159b7f7ad4a03128a2c20337dd77164522077843",
@@ -47,7 +47,7 @@
     "unit": "fraction"
    },
    "wall_s": {
-    "value": 142.6,
+    "value": 176.1,
     "unit": "s"
    }
   }
