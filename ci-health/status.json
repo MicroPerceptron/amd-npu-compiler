@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-27T00:55:59+00:00",
+ "generated_at": "2026-11-27T06:52:28+00:00",
  "repo": "MicroPerceptron/amd-npu-compiler",
  "window_days": 14,
  "critical": [
@@ -1585,6 +1585,18 @@
    "why": "the Kernels section's numbers; a leg that found no runner publishes nothing",
    "runs": [
     {
+     "id": 45951197235,
+     "url": "https://github.com/MicroPerceptron/amd-npu-compiler/actions/runs/45951197235",
+     "status": "in_progress",
+     "conclusion": null,
+     "created_at": "2026-11-27T06:20:18Z",
+     "run_started_at": "2026-11-27T06:20:18Z",
+     "updated_at": "2026-11-27T06:20:21Z",
+     "head_sha": "159b7f7ad4a03128a2c20337dd77164522077843",
+     "title": "Nightly Kernel Checks on Ryzen AI",
+     "attempt": 1
+    },
+    {
      "id": 45767500445,
      "url": "https://github.com/MicroPerceptron/amd-npu-compiler/actions/runs/45767500445",
      "status": "pending",
@@ -1715,48 +1727,17 @@
      "head_sha": "a75319190bdb1ca83703433b2aa8f8f52bc80565",
      "title": "Nightly Kernel Checks on Ryzen AI",
      "attempt": 1
-    },
-    {
-     "id": 43684788261,
-     "url": "https://github.com/MicroPerceptron/amd-npu-compiler/actions/runs/43684788261",
-     "status": "pending",
-     "conclusion": null,
-     "created_at": "2026-11-15T06:17:52Z",
-     "run_started_at": "2026-11-15T06:17:52Z",
-     "updated_at": "2026-11-15T06:17:53Z",
-     "head_sha": "a75319190bdb1ca83703433b2aa8f8f52bc80565",
-     "title": "Nightly Kernel Checks on Ryzen AI",
-     "attempt": 1
     }
    ],
    "jobs": [
     {
      "name": "runners / pick",
-     "url": "https://github.com/MicroPerceptron/amd-npu-compiler/actions/runs/45767500445/job/139731843161",
-     "status": "completed",
-     "conclusion": "success",
-     "created_at": "2026-11-26T06:20:23Z",
-     "started_at": "2026-11-26T06:20:24Z",
-     "runner": "GitHub Actions 1000086448",
-     "outcome": "passed"
-    },
-    {
-     "name": "Kernel checks (aie2-4col)",
-     "url": "https://github.com/MicroPerceptron/amd-npu-compiler/actions/runs/45767500445/job/139842296509",
-     "status": "queued",
+     "url": "https://github.com/MicroPerceptron/amd-npu-compiler/actions/runs/45951197235/job/140347214540",
+     "status": "in_progress",
      "conclusion": null,
-     "created_at": "2026-11-26T10:21:19Z",
-     "started_at": "2026-11-26T10:21:19Z",
-     "runner": ""
-    },
-    {
-     "name": "Kernel checks (aie2p-8col)",
-     "url": "https://github.com/MicroPerceptron/amd-npu-compiler/actions/runs/45767500445/job/139842297574",
-     "status": "pending",
-     "conclusion": null,
-     "created_at": "2026-11-26T10:21:19Z",
-     "started_at": "2026-11-26T10:21:19Z",
-     "runner": null
+     "created_at": "2026-11-27T06:20:19Z",
+     "started_at": "2026-11-27T06:20:21Z",
+     "runner": "GitHub Actions 1000086767"
     }
    ]
   },
@@ -1767,6 +1748,18 @@
    "legs": true,
    "why": "the Performance and Placement sections' numbers",
    "runs": [
+    {
+     "id": 45953363691,
+     "url": "https://github.com/MicroPerceptron/amd-npu-compiler/actions/runs/45953363691",
+     "status": "in_progress",
+     "conclusion": null,
+     "created_at": "2026-11-27T06:40:29Z",
+     "run_started_at": "2026-11-27T06:40:29Z",
+     "updated_at": "2026-11-27T06:40:32Z",
+     "head_sha": "159b7f7ad4a03128a2c20337dd77164522077843",
+     "title": "Nightly Component Checks",
+     "attempt": 1
+    },
     {
      "id": 45769833459,
      "url": "https://github.com/MicroPerceptron/amd-npu-compiler/actions/runs/45769833459",
@@ -1898,49 +1891,26 @@
      "head_sha": "a75319190bdb1ca83703433b2aa8f8f52bc80565",
      "title": "Nightly Component Checks",
      "attempt": 1
-    },
-    {
-     "id": 43686234427,
-     "url": "https://github.com/MicroPerceptron/amd-npu-compiler/actions/runs/43686234427",
-     "status": "pending",
-     "conclusion": null,
-     "created_at": "2026-11-15T06:36:46Z",
-     "run_started_at": "2026-11-15T06:36:46Z",
-     "updated_at": "2026-11-15T06:36:47Z",
-     "head_sha": "a75319190bdb1ca83703433b2aa8f8f52bc80565",
-     "title": "Nightly Component Checks",
-     "attempt": 1
     }
    ],
    "jobs": [
     {
      "name": "SA placer seed sweep (CPU-only)",
-     "url": "https://github.com/MicroPerceptron/amd-npu-compiler/actions/runs/45769833459/job/139739543080",
-     "status": "completed",
-     "conclusion": "success",
-     "created_at": "2026-11-26T06:40:36Z",
-     "started_at": "2026-11-26T06:40:37Z",
-     "runner": "GitHub Actions 1000086454",
-     "outcome": "passed"
+     "url": "https://github.com/MicroPerceptron/amd-npu-compiler/actions/runs/45953363691/job/140354098693",
+     "status": "in_progress",
+     "conclusion": null,
+     "created_at": "2026-11-27T06:40:30Z",
+     "started_at": "2026-11-27T06:40:32Z",
+     "runner": "GitHub Actions 1000086773"
     },
     {
      "name": "runners / pick",
-     "url": "https://github.com/MicroPerceptron/amd-npu-compiler/actions/runs/45769833459/job/139739543440",
-     "status": "completed",
-     "conclusion": "success",
-     "created_at": "2026-11-26T06:40:36Z",
-     "started_at": "2026-11-26T06:40:37Z",
-     "runner": "GitHub Actions 1000086455",
-     "outcome": "passed"
-    },
-    {
-     "name": "Design checks on hardware (mobilenet, llama, yolo26n; npu2)",
-     "url": "https://github.com/MicroPerceptron/amd-npu-compiler/actions/runs/45769833459/job/139853290392",
-     "status": "pending",
+     "url": "https://github.com/MicroPerceptron/amd-npu-compiler/actions/runs/45953363691/job/140354099038",
+     "status": "in_progress",
      "conclusion": null,
-     "created_at": "2026-11-26T10:41:45Z",
-     "started_at": "2026-11-26T10:41:45Z",
-     "runner": null
+     "created_at": "2026-11-27T06:40:30Z",
+     "started_at": "2026-11-27T06:40:31Z",
+     "runner": "GitHub Actions 1000086774"
     }
    ]
   },
@@ -1951,6 +1921,18 @@
    "legs": true,
    "why": "the buffer allocator and the packet router against their models at many times check-aie's scale; the Routing and Placement sections' numbers",
    "runs": [
+    {
+     "id": 45933686533,
+     "url": "https://github.com/MicroPerceptron/amd-npu-compiler/actions/runs/45933686533",
+     "status": "completed",
+     "conclusion": "success",
+     "created_at": "2026-11-27T03:21:24Z",
+     "run_started_at": "2026-11-27T03:21:24Z",
+     "updated_at": "2026-11-27T03:44:02Z",
+     "head_sha": "159b7f7ad4a03128a2c20337dd77164522077843",
+     "title": "Model-based tests",
+     "attempt": 1
+    },
     {
      "id": 45748386504,
      "url": "https://github.com/MicroPerceptron/amd-npu-compiler/actions/runs/45748386504",
@@ -1979,122 +1961,122 @@
    "jobs": [
     {
      "name": "Build, allocator and router lit tests",
-     "url": "https://github.com/MicroPerceptron/amd-npu-compiler/actions/runs/45748386504/job/139669909020",
+     "url": "https://github.com/MicroPerceptron/amd-npu-compiler/actions/runs/45933686533/job/140291866058",
      "status": "completed",
      "conclusion": "success",
-     "created_at": "2026-11-26T03:21:27Z",
-     "started_at": "2026-11-26T03:21:29Z",
-     "runner": "GitHub Actions 1000086292",
-     "outcome": "passed"
-    },
-    {
-     "name": "Router properties, npu2",
-     "url": "https://github.com/MicroPerceptron/amd-npu-compiler/actions/runs/45748386504/job/139672592590",
-     "status": "completed",
-     "conclusion": "success",
-     "created_at": "2026-11-26T03:29:00Z",
-     "started_at": "2026-11-26T03:29:02Z",
-     "runner": "GitHub Actions 1000086302",
-     "outcome": "passed"
-    },
-    {
-     "name": "Router properties, xcvc1902",
-     "url": "https://github.com/MicroPerceptron/amd-npu-compiler/actions/runs/45748386504/job/139672592597",
-     "status": "completed",
-     "conclusion": "success",
-     "created_at": "2026-11-26T03:29:00Z",
-     "started_at": "2026-11-26T03:29:02Z",
-     "runner": "GitHub Actions 1000086303",
-     "outcome": "passed"
-    },
-    {
-     "name": "Router hops-off, npu2",
-     "url": "https://github.com/MicroPerceptron/amd-npu-compiler/actions/runs/45748386504/job/139672592625",
-     "status": "completed",
-     "conclusion": "success",
-     "created_at": "2026-11-26T03:29:00Z",
-     "started_at": "2026-11-26T03:29:02Z",
-     "runner": "GitHub Actions 1000086308",
-     "outcome": "passed"
-    },
-    {
-     "name": "Router hops-off, xcvc1902",
-     "url": "https://github.com/MicroPerceptron/amd-npu-compiler/actions/runs/45748386504/job/139672592635",
-     "status": "completed",
-     "conclusion": "success",
-     "created_at": "2026-11-26T03:29:00Z",
-     "started_at": "2026-11-26T03:29:02Z",
-     "runner": "GitHub Actions 1000086304",
-     "outcome": "passed"
-    },
-    {
-     "name": "Router hops-on, npu2",
-     "url": "https://github.com/MicroPerceptron/amd-npu-compiler/actions/runs/45748386504/job/139672592636",
-     "status": "completed",
-     "conclusion": "success",
-     "created_at": "2026-11-26T03:29:00Z",
-     "started_at": "2026-11-26T03:29:02Z",
-     "runner": "GitHub Actions 1000086305",
-     "outcome": "passed"
-    },
-    {
-     "name": "Router properties, npu1",
-     "url": "https://github.com/MicroPerceptron/amd-npu-compiler/actions/runs/45748386504/job/139672592641",
-     "status": "completed",
-     "conclusion": "success",
-     "created_at": "2026-11-26T03:29:00Z",
-     "started_at": "2026-11-26T03:29:02Z",
-     "runner": "GitHub Actions 1000086309",
+     "created_at": "2026-11-27T03:21:25Z",
+     "started_at": "2026-11-27T03:21:26Z",
+     "runner": "GitHub Actions 1000086712",
      "outcome": "passed"
     },
     {
      "name": "Router hops-on, xcvc1902",
-     "url": "https://github.com/MicroPerceptron/amd-npu-compiler/actions/runs/45748386504/job/139672592647",
+     "url": "https://github.com/MicroPerceptron/amd-npu-compiler/actions/runs/45933686533/job/140294555970",
      "status": "completed",
      "conclusion": "success",
-     "created_at": "2026-11-26T03:29:00Z",
-     "started_at": "2026-11-26T03:29:02Z",
-     "runner": "GitHub Actions 1000086306",
+     "created_at": "2026-11-27T03:30:06Z",
+     "started_at": "2026-11-27T03:30:08Z",
+     "runner": "GitHub Actions 1000086719",
+     "outcome": "passed"
+    },
+    {
+     "name": "Router hops-on, npu2",
+     "url": "https://github.com/MicroPerceptron/amd-npu-compiler/actions/runs/45933686533/job/140294555971",
+     "status": "completed",
+     "conclusion": "success",
+     "created_at": "2026-11-27T03:30:06Z",
+     "started_at": "2026-11-27T03:30:08Z",
+     "runner": "GitHub Actions 1000086722",
+     "outcome": "passed"
+    },
+    {
+     "name": "Router properties, xcvc1902",
+     "url": "https://github.com/MicroPerceptron/amd-npu-compiler/actions/runs/45933686533/job/140294555983",
+     "status": "completed",
+     "conclusion": "success",
+     "created_at": "2026-11-27T03:30:06Z",
+     "started_at": "2026-11-27T03:30:07Z",
+     "runner": "GitHub Actions 1000086716",
      "outcome": "passed"
     },
     {
      "name": "Router hops-on, npu1",
-     "url": "https://github.com/MicroPerceptron/amd-npu-compiler/actions/runs/45748386504/job/139672592652",
+     "url": "https://github.com/MicroPerceptron/amd-npu-compiler/actions/runs/45933686533/job/140294555993",
      "status": "completed",
      "conclusion": "success",
-     "created_at": "2026-11-26T03:29:00Z",
-     "started_at": "2026-11-26T03:29:02Z",
-     "runner": "GitHub Actions 1000086307",
+     "created_at": "2026-11-27T03:30:06Z",
+     "started_at": "2026-11-27T03:30:08Z",
+     "runner": "GitHub Actions 1000086717",
+     "outcome": "passed"
+    },
+    {
+     "name": "Router properties, npu1",
+     "url": "https://github.com/MicroPerceptron/amd-npu-compiler/actions/runs/45933686533/job/140294555997",
+     "status": "completed",
+     "conclusion": "success",
+     "created_at": "2026-11-27T03:30:06Z",
+     "started_at": "2026-11-27T03:30:08Z",
+     "runner": "GitHub Actions 1000086720",
+     "outcome": "passed"
+    },
+    {
+     "name": "Router properties, npu2",
+     "url": "https://github.com/MicroPerceptron/amd-npu-compiler/actions/runs/45933686533/job/140294556012",
+     "status": "completed",
+     "conclusion": "success",
+     "created_at": "2026-11-27T03:30:06Z",
+     "started_at": "2026-11-27T03:30:07Z",
+     "runner": "GitHub Actions 1000086721",
+     "outcome": "passed"
+    },
+    {
+     "name": "Router hops-off, npu2",
+     "url": "https://github.com/MicroPerceptron/amd-npu-compiler/actions/runs/45933686533/job/140294556013",
+     "status": "completed",
+     "conclusion": "success",
+     "created_at": "2026-11-27T03:30:06Z",
+     "started_at": "2026-11-27T03:30:08Z",
+     "runner": "GitHub Actions 1000086718",
+     "outcome": "passed"
+    },
+    {
+     "name": "Router hops-off, xcvc1902",
+     "url": "https://github.com/MicroPerceptron/amd-npu-compiler/actions/runs/45933686533/job/140294556140",
+     "status": "completed",
+     "conclusion": "success",
+     "created_at": "2026-11-27T03:30:06Z",
+     "started_at": "2026-11-27T03:30:08Z",
+     "runner": "GitHub Actions 1000086724",
      "outcome": "passed"
     },
     {
      "name": "Router hops-off, npu1",
-     "url": "https://github.com/MicroPerceptron/amd-npu-compiler/actions/runs/45748386504/job/139672592692",
+     "url": "https://github.com/MicroPerceptron/amd-npu-compiler/actions/runs/45933686533/job/140294556193",
      "status": "completed",
      "conclusion": "success",
-     "created_at": "2026-11-26T03:29:00Z",
-     "started_at": "2026-11-26T03:29:02Z",
-     "runner": "GitHub Actions 1000086310",
+     "created_at": "2026-11-27T03:30:06Z",
+     "started_at": "2026-11-27T03:30:08Z",
+     "runner": "GitHub Actions 1000086723",
      "outcome": "passed"
     },
     {
      "name": "Collect results",
-     "url": "https://github.com/MicroPerceptron/amd-npu-compiler/actions/runs/45748386504/job/139676104937",
+     "url": "https://github.com/MicroPerceptron/amd-npu-compiler/actions/runs/45933686533/job/140298606686",
      "status": "completed",
      "conclusion": "success",
-     "created_at": "2026-11-26T03:39:04Z",
-     "started_at": "2026-11-26T03:39:05Z",
-     "runner": "GitHub Actions 1000086311",
+     "created_at": "2026-11-27T03:43:17Z",
+     "started_at": "2026-11-27T03:43:19Z",
+     "runner": "GitHub Actions 1000086725",
      "outcome": "passed"
     },
     {
      "name": "publish",
-     "url": "https://github.com/MicroPerceptron/amd-npu-compiler/actions/runs/45748386504/job/139676171498",
+     "url": "https://github.com/MicroPerceptron/amd-npu-compiler/actions/runs/45933686533/job/140298674773",
      "status": "completed",
      "conclusion": "success",
-     "created_at": "2026-11-26T03:39:16Z",
-     "started_at": "2026-11-26T03:39:17Z",
-     "runner": "GitHub Actions 1000086312",
+     "created_at": "2026-11-27T03:43:31Z",
+     "started_at": "2026-11-27T03:43:33Z",
+     "runner": "GitHub Actions 1000086726",
      "outcome": "passed"
     }
    ]
@@ -2107,13 +2089,25 @@
    "why": "refreshes the latest-wheels releases users install from",
    "runs": [
     {
-     "id": 45753180799,
-     "url": "https://github.com/MicroPerceptron/amd-npu-compiler/actions/runs/45753180799",
+     "id": 45938064845,
+     "url": "https://github.com/MicroPerceptron/amd-npu-compiler/actions/runs/45938064845",
      "status": "queued",
      "conclusion": null,
+     "created_at": "2026-11-27T04:07:20Z",
+     "run_started_at": "2026-11-27T04:07:20Z",
+     "updated_at": "2026-11-27T04:35:54Z",
+     "head_sha": "159b7f7ad4a03128a2c20337dd77164522077843",
+     "title": "Publish Ryzen AI wheels",
+     "attempt": 1
+    },
+    {
+     "id": 45753180799,
+     "url": "https://github.com/MicroPerceptron/amd-npu-compiler/actions/runs/45753180799",
+     "status": "completed",
+     "conclusion": "cancelled",
      "created_at": "2026-11-26T04:07:22Z",
      "run_started_at": "2026-11-26T04:07:22Z",
-     "updated_at": "2026-11-26T04:35:15Z",
+     "updated_at": "2026-11-27T04:07:21Z",
      "head_sha": "159b7f7ad4a03128a2c20337dd77164522077843",
      "title": "Publish Ryzen AI wheels",
      "attempt": 1
@@ -2237,198 +2231,186 @@
      "head_sha": "a75319190bdb1ca83703433b2aa8f8f52bc80565",
      "title": "Publish Ryzen AI wheels",
      "attempt": 1
-    },
-    {
-     "id": 43675334240,
-     "url": "https://github.com/MicroPerceptron/amd-npu-compiler/actions/runs/43675334240",
-     "status": "completed",
-     "conclusion": "cancelled",
-     "created_at": "2026-11-15T04:07:04Z",
-     "run_started_at": "2026-11-15T04:07:04Z",
-     "updated_at": "2026-11-16T04:07:41Z",
-     "head_sha": "a75319190bdb1ca83703433b2aa8f8f52bc80565",
-     "title": "Publish Ryzen AI wheels",
-     "attempt": 1
     }
    ],
    "jobs": [
     {
-     "name": "Build Windows wheels / Build and upload mlir_aie wheels (Windows) (3.11, ON)",
-     "url": "https://github.com/MicroPerceptron/amd-npu-compiler/actions/runs/45753180799/job/139685542438",
-     "status": "completed",
-     "conclusion": "success",
-     "created_at": "2026-11-26T04:07:23Z",
-     "started_at": "2026-11-26T04:07:25Z",
-     "runner": "GitHub Actions 1000086328",
-     "outcome": "passed"
-    },
-    {
      "name": "Build Windows wheels / Build and upload mlir_aie wheel (Windows 3.13 RTTI ON)",
-     "url": "https://github.com/MicroPerceptron/amd-npu-compiler/actions/runs/45753180799/job/139685542703",
+     "url": "https://github.com/MicroPerceptron/amd-npu-compiler/actions/runs/45938064845/job/140305763444",
      "status": "completed",
      "conclusion": "success",
-     "created_at": "2026-11-26T04:07:23Z",
-     "started_at": "2026-11-26T04:07:25Z",
-     "runner": "GitHub Actions 1000086329",
+     "created_at": "2026-11-27T04:07:21Z",
+     "started_at": "2026-11-27T04:07:22Z",
+     "runner": "GitHub Actions 1000086738",
      "outcome": "passed"
     },
     {
-     "name": "Build Linux wheels / Build and upload mlir_aie wheels (Linux) (3.11, ON)",
-     "url": "https://github.com/MicroPerceptron/amd-npu-compiler/actions/runs/45753180799/job/139685542717",
-     "status": "completed",
-     "conclusion": "failure",
-     "created_at": "2026-11-26T04:07:23Z",
-     "started_at": "2026-11-26T04:07:24Z",
-     "runner": "GitHub Actions 1000086330",
-     "outcome": "failed"
-    },
-    {
-     "name": "Build Linux wheels / Build and upload mlir_aie wheels (Linux) (3.14, ON)",
-     "url": "https://github.com/MicroPerceptron/amd-npu-compiler/actions/runs/45753180799/job/139685542739",
-     "status": "completed",
-     "conclusion": "failure",
-     "created_at": "2026-11-26T04:07:23Z",
-     "started_at": "2026-11-26T04:07:25Z",
-     "runner": "GitHub Actions 1000086331",
-     "outcome": "failed"
-    },
-    {
-     "name": "Build Windows wheels / Build and upload mlir_aie wheels (Windows) (3.12, OFF)",
-     "url": "https://github.com/MicroPerceptron/amd-npu-compiler/actions/runs/45753180799/job/139685542759",
+     "name": "Build Windows wheels / Build and upload mlir_aie wheels (Windows) (3.14, ON)",
+     "url": "https://github.com/MicroPerceptron/amd-npu-compiler/actions/runs/45938064845/job/140305763629",
      "status": "completed",
      "conclusion": "success",
-     "created_at": "2026-11-26T04:07:23Z",
-     "started_at": "2026-11-26T04:07:25Z",
-     "runner": "GitHub Actions 1000086337",
+     "created_at": "2026-11-27T04:07:21Z",
+     "started_at": "2026-11-27T04:07:23Z",
+     "runner": "GitHub Actions 1000086750",
      "outcome": "passed"
     },
     {
-     "name": "Build Linux wheels / Build and upload mlir_aie wheels (Linux) (3.13, ON)",
-     "url": "https://github.com/MicroPerceptron/amd-npu-compiler/actions/runs/45753180799/job/139685542762",
-     "status": "completed",
-     "conclusion": "failure",
-     "created_at": "2026-11-26T04:07:23Z",
-     "started_at": "2026-11-26T04:07:24Z",
-     "runner": "GitHub Actions 1000086333",
-     "outcome": "failed"
-    },
-    {
-     "name": "Build Windows wheels / Build and upload mlir_aie wheels (Windows) (3.12, ON)",
-     "url": "https://github.com/MicroPerceptron/amd-npu-compiler/actions/runs/45753180799/job/139685542776",
+     "name": "Build Windows wheels / Build and upload mlir_aie wheels (Windows) (3.11, ON)",
+     "url": "https://github.com/MicroPerceptron/amd-npu-compiler/actions/runs/45938064845/job/140305763643",
      "status": "completed",
      "conclusion": "success",
-     "created_at": "2026-11-26T04:07:23Z",
-     "started_at": "2026-11-26T04:07:24Z",
-     "runner": "GitHub Actions 1000086335",
-     "outcome": "passed"
-    },
-    {
-     "name": "Build Linux wheels / Build and upload mlir_aie wheels (Linux) (3.14, OFF)",
-     "url": "https://github.com/MicroPerceptron/amd-npu-compiler/actions/runs/45753180799/job/139685542783",
-     "status": "completed",
-     "conclusion": "failure",
-     "created_at": "2026-11-26T04:07:23Z",
-     "started_at": "2026-11-26T04:07:25Z",
-     "runner": "GitHub Actions 1000086341",
-     "outcome": "failed"
-    },
-    {
-     "name": "Build Windows wheels / Build and upload mlir_aie wheels (Windows) (3.14, OFF)",
-     "url": "https://github.com/MicroPerceptron/amd-npu-compiler/actions/runs/45753180799/job/139685542798",
-     "status": "completed",
-     "conclusion": "success",
-     "created_at": "2026-11-26T04:07:23Z",
-     "started_at": "2026-11-26T04:07:24Z",
-     "runner": "GitHub Actions 1000086334",
-     "outcome": "passed"
-    },
-    {
-     "name": "Build Linux wheels / Build and upload mlir_aie wheels (Linux) (3.11, OFF)",
-     "url": "https://github.com/MicroPerceptron/amd-npu-compiler/actions/runs/45753180799/job/139685542839",
-     "status": "completed",
-     "conclusion": "failure",
-     "created_at": "2026-11-26T04:07:23Z",
-     "started_at": "2026-11-26T04:07:24Z",
-     "runner": "GitHub Actions 1000086332",
-     "outcome": "failed"
-    },
-    {
-     "name": "Build Linux wheels / Build and upload mlir_aie wheels (Linux) (3.12, OFF)",
-     "url": "https://github.com/MicroPerceptron/amd-npu-compiler/actions/runs/45753180799/job/139685542862",
-     "status": "completed",
-     "conclusion": "failure",
-     "created_at": "2026-11-26T04:07:23Z",
-     "started_at": "2026-11-26T04:07:24Z",
-     "runner": "GitHub Actions 1000086340",
-     "outcome": "failed"
-    },
-    {
-     "name": "Build Windows wheels / Build and upload mlir_aie wheels (Windows) (3.11, OFF)",
-     "url": "https://github.com/MicroPerceptron/amd-npu-compiler/actions/runs/45753180799/job/139685542898",
-     "status": "completed",
-     "conclusion": "success",
-     "created_at": "2026-11-26T04:07:23Z",
-     "started_at": "2026-11-26T04:07:25Z",
-     "runner": "GitHub Actions 1000086336",
+     "created_at": "2026-11-27T04:07:21Z",
+     "started_at": "2026-11-27T04:07:23Z",
+     "runner": "GitHub Actions 1000086739",
      "outcome": "passed"
     },
     {
      "name": "Build Linux wheels / Build and upload mlir_aie wheel (Linux 3.12 RTTI ON)",
-     "url": "https://github.com/MicroPerceptron/amd-npu-compiler/actions/runs/45753180799/job/139685542900",
+     "url": "https://github.com/MicroPerceptron/amd-npu-compiler/actions/runs/45938064845/job/140305763657",
      "status": "completed",
      "conclusion": "failure",
-     "created_at": "2026-11-26T04:07:23Z",
-     "started_at": "2026-11-26T04:07:25Z",
-     "runner": "GitHub Actions 1000086343",
+     "created_at": "2026-11-27T04:07:21Z",
+     "started_at": "2026-11-27T04:07:23Z",
+     "runner": "GitHub Actions 1000086740",
      "outcome": "failed"
     },
     {
-     "name": "Build Windows wheels / Build and upload mlir_aie wheels (Windows) (3.14, ON)",
-     "url": "https://github.com/MicroPerceptron/amd-npu-compiler/actions/runs/45753180799/job/139685542922",
+     "name": "Build Windows wheels / Build and upload mlir_aie wheels (Windows) (3.14, OFF)",
+     "url": "https://github.com/MicroPerceptron/amd-npu-compiler/actions/runs/45938064845/job/140305763683",
      "status": "completed",
      "conclusion": "success",
-     "created_at": "2026-11-26T04:07:23Z",
-     "started_at": "2026-11-26T04:07:25Z",
-     "runner": "GitHub Actions 1000086339",
+     "created_at": "2026-11-27T04:07:21Z",
+     "started_at": "2026-11-27T04:07:23Z",
+     "runner": "GitHub Actions 1000086749",
      "outcome": "passed"
     },
     {
-     "name": "Build Windows wheels / Build and upload mlir_aie wheels (Windows) (3.13, OFF)",
-     "url": "https://github.com/MicroPerceptron/amd-npu-compiler/actions/runs/45753180799/job/139685542969",
+     "name": "Build Linux wheels / Build and upload mlir_aie wheels (Linux) (3.12, OFF)",
+     "url": "https://github.com/MicroPerceptron/amd-npu-compiler/actions/runs/45938064845/job/140305763702",
+     "status": "completed",
+     "conclusion": "failure",
+     "created_at": "2026-11-27T04:07:21Z",
+     "started_at": "2026-11-27T04:07:23Z",
+     "runner": "GitHub Actions 1000086753",
+     "outcome": "failed"
+    },
+    {
+     "name": "Build Linux wheels / Build and upload mlir_aie wheels (Linux) (3.11, ON)",
+     "url": "https://github.com/MicroPerceptron/amd-npu-compiler/actions/runs/45938064845/job/140305763755",
+     "status": "completed",
+     "conclusion": "failure",
+     "created_at": "2026-11-27T04:07:21Z",
+     "started_at": "2026-11-27T04:07:23Z",
+     "runner": "GitHub Actions 1000086745",
+     "outcome": "failed"
+    },
+    {
+     "name": "Build Windows wheels / Build and upload mlir_aie wheels (Windows) (3.12, OFF)",
+     "url": "https://github.com/MicroPerceptron/amd-npu-compiler/actions/runs/45938064845/job/140305763758",
      "status": "completed",
      "conclusion": "success",
-     "created_at": "2026-11-26T04:07:23Z",
-     "started_at": "2026-11-26T04:07:25Z",
-     "runner": "GitHub Actions 1000086338",
+     "created_at": "2026-11-27T04:07:21Z",
+     "started_at": "2026-11-27T04:07:23Z",
+     "runner": "GitHub Actions 1000086747",
+     "outcome": "passed"
+    },
+    {
+     "name": "Build Linux wheels / Build and upload mlir_aie wheels (Linux) (3.13, ON)",
+     "url": "https://github.com/MicroPerceptron/amd-npu-compiler/actions/runs/45938064845/job/140305763765",
+     "status": "completed",
+     "conclusion": "failure",
+     "created_at": "2026-11-27T04:07:21Z",
+     "started_at": "2026-11-27T04:07:23Z",
+     "runner": "GitHub Actions 1000086742",
+     "outcome": "failed"
+    },
+    {
+     "name": "Build Windows wheels / Build and upload mlir_aie wheels (Windows) (3.13, OFF)",
+     "url": "https://github.com/MicroPerceptron/amd-npu-compiler/actions/runs/45938064845/job/140305763789",
+     "status": "completed",
+     "conclusion": "success",
+     "created_at": "2026-11-27T04:07:21Z",
+     "started_at": "2026-11-27T04:07:23Z",
+     "runner": "GitHub Actions 1000086744",
      "outcome": "passed"
     },
     {
      "name": "Build Linux wheels / Build and upload mlir_aie wheels (Linux) (3.13, OFF)",
-     "url": "https://github.com/MicroPerceptron/amd-npu-compiler/actions/runs/45753180799/job/139685542986",
+     "url": "https://github.com/MicroPerceptron/amd-npu-compiler/actions/runs/45938064845/job/140305763838",
      "status": "completed",
      "conclusion": "failure",
-     "created_at": "2026-11-26T04:07:23Z",
-     "started_at": "2026-11-26T04:07:25Z",
-     "runner": "GitHub Actions 1000086342",
+     "created_at": "2026-11-27T04:07:21Z",
+     "started_at": "2026-11-27T04:07:24Z",
+     "runner": "GitHub Actions 1000086741",
      "outcome": "failed"
     },
     {
+     "name": "Build Windows wheels / Build and upload mlir_aie wheels (Windows) (3.11, OFF)",
+     "url": "https://github.com/MicroPerceptron/amd-npu-compiler/actions/runs/45938064845/job/140305763847",
+     "status": "completed",
+     "conclusion": "success",
+     "created_at": "2026-11-27T04:07:21Z",
+     "started_at": "2026-11-27T04:07:23Z",
+     "runner": "GitHub Actions 1000086746",
+     "outcome": "passed"
+    },
+    {
+     "name": "Build Linux wheels / Build and upload mlir_aie wheels (Linux) (3.14, OFF)",
+     "url": "https://github.com/MicroPerceptron/amd-npu-compiler/actions/runs/45938064845/job/140305763858",
+     "status": "completed",
+     "conclusion": "failure",
+     "created_at": "2026-11-27T04:07:21Z",
+     "started_at": "2026-11-27T04:07:23Z",
+     "runner": "GitHub Actions 1000086743",
+     "outcome": "failed"
+    },
+    {
+     "name": "Build Linux wheels / Build and upload mlir_aie wheels (Linux) (3.14, ON)",
+     "url": "https://github.com/MicroPerceptron/amd-npu-compiler/actions/runs/45938064845/job/140305763911",
+     "status": "completed",
+     "conclusion": "failure",
+     "created_at": "2026-11-27T04:07:21Z",
+     "started_at": "2026-11-27T04:07:23Z",
+     "runner": "GitHub Actions 1000086748",
+     "outcome": "failed"
+    },
+    {
+     "name": "Build Linux wheels / Build and upload mlir_aie wheels (Linux) (3.11, OFF)",
+     "url": "https://github.com/MicroPerceptron/amd-npu-compiler/actions/runs/45938064845/job/140305763986",
+     "status": "completed",
+     "conclusion": "failure",
+     "created_at": "2026-11-27T04:07:21Z",
+     "started_at": "2026-11-27T04:07:23Z",
+     "runner": "GitHub Actions 1000086752",
+     "outcome": "failed"
+    },
+    {
+     "name": "Build Windows wheels / Build and upload mlir_aie wheels (Windows) (3.12, ON)",
+     "url": "https://github.com/MicroPerceptron/amd-npu-compiler/actions/runs/45938064845/job/140305764015",
+     "status": "completed",
+     "conclusion": "success",
+     "created_at": "2026-11-27T04:07:21Z",
+     "started_at": "2026-11-27T04:07:23Z",
+     "runner": "GitHub Actions 1000086751",
+     "outcome": "passed"
+    },
+    {
      "name": "Build Linux wheels / Smoke-Test Wheel on Ryzen AI",
-     "url": "https://github.com/MicroPerceptron/amd-npu-compiler/actions/runs/45753180799/job/139686535756",
+     "url": "https://github.com/MicroPerceptron/amd-npu-compiler/actions/runs/45938064845/job/140306510421",
      "status": "completed",
      "conclusion": "skipped",
-     "created_at": "2026-11-26T04:10:14Z",
-     "started_at": "2026-11-26T04:10:14Z",
+     "created_at": "2026-11-27T04:09:45Z",
+     "started_at": "2026-11-27T04:09:45Z",
      "runner": null,
      "outcome": "passed"
     },
     {
      "name": "Build Windows wheels / Smoke-Test Wheel on Ryzen AI (Windows)",
-     "url": "https://github.com/MicroPerceptron/amd-npu-compiler/actions/runs/45753180799/job/139695137525",
+     "url": "https://github.com/MicroPerceptron/amd-npu-compiler/actions/runs/45938064845/job/140314641560",
      "status": "queued",
      "conclusion": null,
-     "created_at": "2026-11-26T04:35:15Z",
-     "started_at": "2026-11-26T04:35:15Z",
+     "created_at": "2026-11-27T04:35:54Z",
+     "started_at": "2026-11-27T04:35:54Z",
      "runner": ""
     }
    ]
@@ -2440,13 +2422,25 @@
    "why": "early warning that upstream LLVM broke the build",
    "runs": [
     {
+     "id": 45937469186,
+     "url": "https://github.com/MicroPerceptron/amd-npu-compiler/actions/runs/45937469186",
+     "status": "completed",
+     "conclusion": "success",
+     "created_at": "2026-11-27T04:01:12Z",
+     "run_started_at": "2026-11-27T04:01:12Z",
+     "updated_at": "2026-11-27T04:56:44Z",
+     "head_sha": "159b7f7ad4a03128a2c20337dd77164522077843",
+     "title": "MLIR Distro",
+     "attempt": 1
+    },
+    {
      "id": 45914447739,
      "url": "https://github.com/MicroPerceptron/amd-npu-compiler/actions/runs/45914447739",
-     "status": "in_progress",
-     "conclusion": null,
+     "status": "completed",
+     "conclusion": "success",
      "created_at": "2026-11-27T00:03:05Z",
      "run_started_at": "2026-11-27T00:03:05Z",
-     "updated_at": "2026-11-27T00:03:32Z",
+     "updated_at": "2026-11-27T01:11:05Z",
      "head_sha": "159b7f7ad4a03128a2c20337dd77164522077843",
      "title": "MLIR Distro",
      "attempt": 1
@@ -2570,18 +2564,6 @@
      "head_sha": "159b7f7ad4a03128a2c20337dd77164522077843",
      "title": "MLIR Distro",
      "attempt": 1
-    },
-    {
-     "id": 45543910371,
-     "url": "https://github.com/MicroPerceptron/amd-npu-compiler/actions/runs/45543910371",
-     "status": "completed",
-     "conclusion": "success",
-     "created_at": "2026-11-25T04:01:20Z",
-     "run_started_at": "2026-11-25T04:01:20Z",
-     "updated_at": "2026-11-25T07:35:14Z",
-     "head_sha": "159b7f7ad4a03128a2c20337dd77164522077843",
-     "title": "MLIR Distro",
-     "attempt": 1
     }
    ],
    "jobs": null
@@ -2592,6 +2574,18 @@
    "every": 24,
    "why": "keeps dev-wheels under 1,000 assets; when it stops, PR wheel uploads fail",
    "runs": [
+    {
+     "id": 45939635455,
+     "url": "https://github.com/MicroPerceptron/amd-npu-compiler/actions/runs/45939635455",
+     "status": "completed",
+     "conclusion": "failure",
+     "created_at": "2026-11-27T04:23:16Z",
+     "run_started_at": "2026-11-27T04:23:16Z",
+     "updated_at": "2026-11-27T04:23:23Z",
+     "head_sha": "159b7f7ad4a03128a2c20337dd77164522077843",
+     "title": "Prune release assets",
+     "attempt": 1
+    },
     {
      "id": 45754870038,
      "url": "https://github.com/MicroPerceptron/amd-npu-compiler/actions/runs/45754870038",
@@ -2720,18 +2714,6 @@
      "created_at": "2026-11-16T04:28:29Z",
      "run_started_at": "2026-11-16T04:28:29Z",
      "updated_at": "2026-11-16T04:28:36Z",
-     "head_sha": "a75319190bdb1ca83703433b2aa8f8f52bc80565",
-     "title": "Prune release assets",
-     "attempt": 1
-    },
-    {
-     "id": 43676418599,
-     "url": "https://github.com/MicroPerceptron/amd-npu-compiler/actions/runs/43676418599",
-     "status": "completed",
-     "conclusion": "failure",
-     "created_at": "2026-11-15T04:21:37Z",
-     "run_started_at": "2026-11-15T04:21:37Z",
-     "updated_at": "2026-11-15T04:21:42Z",
      "head_sha": "a75319190bdb1ca83703433b2aa8f8f52bc80565",
      "title": "Prune release assets",
      "attempt": 1
@@ -2900,6 +2882,18 @@
    "why": "coverage, check-aie under ASan, UBSan and TSan, CodeQL C++ and clang-tidy over every file: the Code health section's numbers",
    "runs": [
     {
+     "id": 45928460736,
+     "url": "https://github.com/MicroPerceptron/amd-npu-compiler/actions/runs/45928460736",
+     "status": "completed",
+     "conclusion": "failure",
+     "created_at": "2026-11-27T02:27:44Z",
+     "run_started_at": "2026-11-27T02:27:44Z",
+     "updated_at": "2026-11-27T04:00:19Z",
+     "head_sha": "159b7f7ad4a03128a2c20337dd77164522077843",
+     "title": "Code health",
+     "attempt": 1
+    },
+    {
      "id": 45742517875,
      "url": "https://github.com/MicroPerceptron/amd-npu-compiler/actions/runs/45742517875",
      "status": "completed",
@@ -2926,53 +2920,53 @@
    ],
    "jobs": [
     {
-     "name": "clang-tidy, every file",
-     "url": "https://github.com/MicroPerceptron/amd-npu-compiler/actions/runs/45742517875/job/139650719720",
-     "status": "completed",
-     "conclusion": "success",
-     "created_at": "2026-11-26T02:27:14Z",
-     "started_at": "2026-11-26T02:27:15Z",
-     "runner": "GitHub Actions 1000086279",
-     "outcome": "passed"
-    },
-    {
      "name": "check-aie under TSan",
-     "url": "https://github.com/MicroPerceptron/amd-npu-compiler/actions/runs/45742517875/job/139650719904",
+     "url": "https://github.com/MicroPerceptron/amd-npu-compiler/actions/runs/45928460736/job/140275294351",
      "status": "completed",
      "conclusion": "success",
-     "created_at": "2026-11-26T02:27:14Z",
-     "started_at": "2026-11-26T02:27:15Z",
-     "runner": "GitHub Actions 1000086280",
+     "created_at": "2026-11-27T02:27:45Z",
+     "started_at": "2026-11-27T02:27:47Z",
+     "runner": "GitHub Actions 1000086703",
      "outcome": "passed"
     },
     {
-     "name": "check-aie under ASan and UBSan",
-     "url": "https://github.com/MicroPerceptron/amd-npu-compiler/actions/runs/45742517875/job/139650719981",
+     "name": "clang-tidy, every file",
+     "url": "https://github.com/MicroPerceptron/amd-npu-compiler/actions/runs/45928460736/job/140275294523",
      "status": "completed",
      "conclusion": "success",
-     "created_at": "2026-11-26T02:27:14Z",
-     "started_at": "2026-11-26T02:27:15Z",
-     "runner": "GitHub Actions 1000086281",
+     "created_at": "2026-11-27T02:27:45Z",
+     "started_at": "2026-11-27T02:27:46Z",
+     "runner": "GitHub Actions 1000086704",
      "outcome": "passed"
     },
     {
      "name": "coverage / C/C++ test code coverage",
-     "url": "https://github.com/MicroPerceptron/amd-npu-compiler/actions/runs/45742517875/job/139650720209",
+     "url": "https://github.com/MicroPerceptron/amd-npu-compiler/actions/runs/45928460736/job/140275294715",
      "status": "completed",
      "conclusion": "failure",
-     "created_at": "2026-11-26T02:27:14Z",
-     "started_at": "2026-11-26T02:27:16Z",
-     "runner": "GitHub Actions 1000086282",
-     "outcome": "failed"
+     "created_at": "2026-11-27T02:27:45Z",
+     "started_at": "2026-11-27T02:27:47Z",
+     "runner": "GitHub Actions 1000086706",
+     "outcome": "runner_lost"
+    },
+    {
+     "name": "check-aie under ASan and UBSan",
+     "url": "https://github.com/MicroPerceptron/amd-npu-compiler/actions/runs/45928460736/job/140275294773",
+     "status": "completed",
+     "conclusion": "success",
+     "created_at": "2026-11-27T02:27:45Z",
+     "started_at": "2026-11-27T02:27:46Z",
+     "runner": "GitHub Actions 1000086705",
+     "outcome": "passed"
     },
     {
      "name": "publish",
-     "url": "https://github.com/MicroPerceptron/amd-npu-compiler/actions/runs/45742517875/job/139684454407",
+     "url": "https://github.com/MicroPerceptron/amd-npu-compiler/actions/runs/45928460736/job/140303437067",
      "status": "completed",
      "conclusion": "success",
-     "created_at": "2026-11-26T04:04:14Z",
-     "started_at": "2026-11-26T04:04:15Z",
-     "runner": "GitHub Actions 1000086327",
+     "created_at": "2026-11-27T03:59:51Z",
+     "started_at": "2026-11-27T03:59:53Z",
+     "runner": "GitHub Actions 1000086730",
      "outcome": "passed"
     }
    ]
