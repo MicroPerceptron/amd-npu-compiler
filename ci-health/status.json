@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-28T06:50:13+00:00",
+ "generated_at": "2026-11-28T12:50:40+00:00",
  "repo": "MicroPerceptron/amd-npu-compiler",
  "window_days": 14,
  "critical": [
@@ -1587,11 +1587,11 @@
     {
      "id": 46115954008,
      "url": "https://github.com/MicroPerceptron/amd-npu-compiler/actions/runs/46115954008",
-     "status": "in_progress",
+     "status": "pending",
      "conclusion": null,
      "created_at": "2026-11-28T06:18:00Z",
      "run_started_at": "2026-11-28T06:18:00Z",
-     "updated_at": "2026-11-28T06:18:03Z",
+     "updated_at": "2026-11-28T10:18:34Z",
      "head_sha": "159b7f7ad4a03128a2c20337dd77164522077843",
      "title": "Nightly Kernel Checks on Ryzen AI",
      "attempt": 1
@@ -1733,11 +1733,30 @@
     {
      "name": "runners / pick",
      "url": "https://github.com/MicroPerceptron/amd-npu-compiler/actions/runs/46115954008/job/140889719637",
-     "status": "in_progress",
-     "conclusion": null,
+     "status": "completed",
+     "conclusion": "success",
      "created_at": "2026-11-28T06:18:00Z",
      "started_at": "2026-11-28T06:18:02Z",
-     "runner": "GitHub Actions 1000087064"
+     "runner": "GitHub Actions 1000087064",
+     "outcome": "passed"
+    },
+    {
+     "name": "Kernel checks (aie2p-8col)",
+     "url": "https://github.com/MicroPerceptron/amd-npu-compiler/actions/runs/46115954008/job/140946837830",
+     "status": "pending",
+     "conclusion": null,
+     "created_at": "2026-11-28T10:18:34Z",
+     "started_at": "2026-11-28T10:18:34Z",
+     "runner": null
+    },
+    {
+     "name": "Kernel checks (aie2-4col)",
+     "url": "https://github.com/MicroPerceptron/amd-npu-compiler/actions/runs/46115954008/job/140946838051",
+     "status": "queued",
+     "conclusion": null,
+     "created_at": "2026-11-28T10:18:34Z",
+     "started_at": "2026-11-28T10:18:34Z",
+     "runner": ""
     }
    ]
   },
@@ -1751,11 +1770,11 @@
     {
      "id": 46117550884,
      "url": "https://github.com/MicroPerceptron/amd-npu-compiler/actions/runs/46117550884",
-     "status": "in_progress",
+     "status": "pending",
      "conclusion": null,
      "created_at": "2026-11-28T06:38:36Z",
      "run_started_at": "2026-11-28T06:38:36Z",
-     "updated_at": "2026-11-28T06:38:39Z",
+     "updated_at": "2026-11-28T10:39:23Z",
      "head_sha": "159b7f7ad4a03128a2c20337dd77164522077843",
      "title": "Nightly Component Checks",
      "attempt": 1
@@ -1897,20 +1916,31 @@
     {
      "name": "SA placer seed sweep (CPU-only)",
      "url": "https://github.com/MicroPerceptron/amd-npu-compiler/actions/runs/46117550884/job/140894648735",
-     "status": "in_progress",
-     "conclusion": null,
+     "status": "completed",
+     "conclusion": "success",
      "created_at": "2026-11-28T06:38:37Z",
      "started_at": "2026-11-28T06:38:39Z",
-     "runner": "GitHub Actions 1000087096"
+     "runner": "GitHub Actions 1000087096",
+     "outcome": "passed"
     },
     {
      "name": "runners / pick",
      "url": "https://github.com/MicroPerceptron/amd-npu-compiler/actions/runs/46117550884/job/140894649061",
-     "status": "in_progress",
-     "conclusion": null,
+     "status": "completed",
+     "conclusion": "success",
      "created_at": "2026-11-28T06:38:37Z",
      "started_at": "2026-11-28T06:38:39Z",
-     "runner": "GitHub Actions 1000087097"
+     "runner": "GitHub Actions 1000087097",
+     "outcome": "passed"
+    },
+    {
+     "name": "Design checks on hardware (mobilenet, llama, yolo26n; npu2)",
+     "url": "https://github.com/MicroPerceptron/amd-npu-compiler/actions/runs/46117550884/job/140951938188",
+     "status": "pending",
+     "conclusion": null,
+     "created_at": "2026-11-28T10:39:23Z",
+     "started_at": "2026-11-28T10:39:23Z",
+     "runner": null
     }
    ]
   },
@@ -2434,6 +2464,30 @@
    "why": "early warning that upstream LLVM broke the build",
    "runs": [
     {
+     "id": 46142596579,
+     "url": "https://github.com/MicroPerceptron/amd-npu-compiler/actions/runs/46142596579",
+     "status": "in_progress",
+     "conclusion": null,
+     "created_at": "2026-11-28T12:01:17Z",
+     "run_started_at": "2026-11-28T12:01:17Z",
+     "updated_at": "2026-11-28T12:01:31Z",
+     "head_sha": "159b7f7ad4a03128a2c20337dd77164522077843",
+     "title": "MLIR Distro",
+     "attempt": 1
+    },
+    {
+     "id": 46123829542,
+     "url": "https://github.com/MicroPerceptron/amd-npu-compiler/actions/runs/46123829542",
+     "status": "completed",
+     "conclusion": "success",
+     "created_at": "2026-11-28T08:01:07Z",
+     "run_started_at": "2026-11-28T08:01:07Z",
+     "updated_at": "2026-11-28T08:05:28Z",
+     "head_sha": "159b7f7ad4a03128a2c20337dd77164522077843",
+     "title": "MLIR Distro",
+     "attempt": 1
+    },
+    {
      "id": 46105543885,
      "url": "https://github.com/MicroPerceptron/amd-npu-compiler/actions/runs/46105543885",
      "status": "completed",
@@ -2549,30 +2603,6 @@
      "created_at": "2026-11-26T16:01:21Z",
      "run_started_at": "2026-11-26T16:01:21Z",
      "updated_at": "2026-11-26T19:37:20Z",
-     "head_sha": "159b7f7ad4a03128a2c20337dd77164522077843",
-     "title": "MLIR Distro",
-     "attempt": 1
-    },
-    {
-     "id": 45815809116,
-     "url": "https://github.com/MicroPerceptron/amd-npu-compiler/actions/runs/45815809116",
-     "status": "completed",
-     "conclusion": "success",
-     "created_at": "2026-11-26T12:01:32Z",
-     "run_started_at": "2026-11-26T12:01:32Z",
-     "updated_at": "2026-11-26T12:25:59Z",
-     "head_sha": "159b7f7ad4a03128a2c20337dd77164522077843",
-     "title": "MLIR Distro",
-     "attempt": 1
-    },
-    {
-     "id": 45779711075,
-     "url": "https://github.com/MicroPerceptron/amd-npu-compiler/actions/runs/45779711075",
-     "status": "completed",
-     "conclusion": "success",
-     "created_at": "2026-11-26T08:01:29Z",
-     "run_started_at": "2026-11-26T08:01:29Z",
-     "updated_at": "2026-11-26T08:41:15Z",
      "head_sha": "159b7f7ad4a03128a2c20337dd77164522077843",
      "title": "MLIR Distro",
      "attempt": 1
