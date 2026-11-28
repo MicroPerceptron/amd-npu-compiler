@@ -1,9 +1,9 @@
 {
  "schema": 1,
  "target": "allocator",
- "id": "45933686533",
- "url": "https://github.com/MicroPerceptron/amd-npu-compiler/actions/runs/45933686533",
- "date": "2026-11-27T03:21:24+00:00",
+ "id": "46102391533",
+ "url": "https://github.com/MicroPerceptron/amd-npu-compiler/actions/runs/46102391533",
+ "date": "2026-11-28T03:20:36+00:00",
  "commit": {
   "id": "159b7f7ad4a03128a2c20337dd77164522077843",
   "url": "https://github.com/Xilinx/mlir-aie/commit/159b7f7ad4a03128a2c20337dd77164522077843",
@@ -12,11 +12,11 @@
  },
  "event": "schedule",
  "pmode": null,
- "device": "AMD EPYC 7763 64-Core Processor",
+ "device": "AMD EPYC 9V74 80-Core Processor",
  "device_raw": null,
  "provenance": {
   "commit": "159b7f7ad4",
-  "cpu": "AMD EPYC 7763 64-Core Processor"
+  "cpu": "AMD EPYC 9V74 80-Core Processor"
  },
  "sane": true,
  "published": true,
@@ -47,7 +47,7 @@
     "unit": "fraction"
    },
    "wall_s": {
-    "value": 176.1,
+    "value": 149.7,
     "unit": "s"
    }
   }
